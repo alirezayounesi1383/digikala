@@ -251,7 +251,6 @@ section.story .swiper-slide img {
   cursor: default;
   z-index: 1;
   position: relative;
-  
 }
 section.story .swiper-slide a {
   font-family: ir-y-medium;
@@ -517,7 +516,6 @@ section.amazing .swiper-slide a img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 section.amazing .swiper-slide a div.price {
   display: flex;
@@ -582,4 +580,82 @@ section.box {
 section.box > a > img {
   border-radius: 30px;
   width: 100%;
+}
+/* amaing 2  */
+section.amazing2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #71bb2c;
+  border-radius: 30px;
+  margin-inline: 10px !important;
+  margin: auto;
+  padding: 20px;
+}
+section.amazing2 div.amazing2 {
+  width: 18%;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+}
+section.amazing2 div.amazing2 botton {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+}
+section.amazing2 .swiper {
+  width: 100%;
+  height: 90% !important;
+  border-radius: 10px;
+}
+section.amazing .swiper-wrapper {
+  height: 100%;
+}
+
+section.amazing2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+section.amazing2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section.amazing2 div.more {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: content-box;
+  height: 220px !important;
+}
+section.amazing2 div.more a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  aspect-ratio: 1;
+  border: 3px solid #1672dd;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 0;
+  padding: 5px;
+}
+section.amazing2 div.more p {
+  font-size: small;
 }
