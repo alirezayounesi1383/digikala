@@ -11,9 +11,7 @@
   --search: #d8d9db;
   --searchtext: #88898b;
 }
-a {
-  line-height: normal;
-}
+
 @font-face {
   font-family: ir-y-bold;
   src: url(../fonts/iranyekanwebbold.e298fdc6.e298fdc6.woff);
@@ -456,7 +454,7 @@ section.amazing .swiper {
   height: 90% !important;
 }
 section.amazing .swiper-wrapper {
-  height: 100%;
+  height: 100% !important;
 }
 
 section.amazing .swiper-slide {
@@ -466,6 +464,7 @@ section.amazing .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100% !important;
 }
 
 section.amazing .swiper-button-next {
@@ -488,34 +487,41 @@ section.amazing .swiper-button-prev {
   height: 40px;
 }
 section.amazing div.more {
-  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  box-sizing: content-box;
-  height: 220px !important;
+
+  box-sizing: border-box;
+  height: inherit;
 }
 section.amazing div.more a {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+section.amazing div.more svg {
   aspect-ratio: 1;
   border: 3px solid #1672dd;
   text-align: center;
   border-radius: 50%;
-  line-height: 0;
+  size: 10%;
   padding: 5px;
 }
 section.amazing div.more p {
   font-size: small;
 }
+section.amazing > div.swiper > div.swiper-wrapper > .swiper-slide > a {
+  width: 100%;
+  height: 100%;
+}
 section.amazing .swiper-slide a img {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 section.amazing .swiper-slide a div.price {
   display: flex;
@@ -581,15 +587,24 @@ section.box > a > img {
   border-radius: 30px;
   width: 100%;
 }
-/* amaing 2  */
+/* fast delivery */
+section.fastdelivery {
+  margin: 0px 20px;
+  height: 60vh;
+  background-color: #fcf3eb;
+
+  border-radius: 10px;
+  border: 1px solid black;
+}
+/* amazing 2  */
 section.amazing2 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   background-color: #71bb2c;
   border-radius: 30px;
-  margin-inline: 10px !important;
-  margin: auto;
+
+  margin: 20px 10px;
   padding: 20px;
 }
 section.amazing2 div.amazing2 {
@@ -598,7 +613,7 @@ section.amazing2 div.amazing2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
   gap: 20px;
 }
@@ -615,7 +630,7 @@ section.amazing2 .swiper {
   height: 90% !important;
   border-radius: 10px;
 }
-section.amazing .swiper-wrapper {
+section.amazing2 .swiper-wrapper {
   height: 100%;
 }
 
@@ -628,34 +643,79 @@ section.amazing2 .swiper-slide {
   align-items: center;
   background-color: white;
 }
-section.amazing2 .swiper-slide img {
+section.amazing2 .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section.amazing2 .swiper-slide a img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+section.amazing2 div.swiper-slide a p {
+  font-size: small;
+}
 section.amazing2 div.more {
-  aspect-ratio: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
   box-sizing: content-box;
-  height: 220px !important;
 }
 section.amazing2 div.more a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  aspect-ratio: 1;
-  border: 3px solid #1672dd;
+  justify-content: center;
+
+  gap: 10px;
   text-align: center;
   border-radius: 50%;
   line-height: 0;
   padding: 5px;
 }
 section.amazing2 div.more p {
+  font-size: small;
+  color: #585858;
+}
+/********************** daste bandi */
+section.category {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+}
+section.category .swiper {
+  width: 100%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+section.category .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.category .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+section.category .swiper-slide span {
   font-size: small;
 }
