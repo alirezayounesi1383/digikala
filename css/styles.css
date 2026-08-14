@@ -7,6 +7,7 @@
   color: black;
   font-family: ir-y-medium;
 }
+
 :root {
   --search: #d8d9db;
   --searchtext: #88898b;
@@ -16,36 +17,44 @@
   font-family: ir-y-bold;
   src: url(../fonts/iranyekanwebbold.e298fdc6.e298fdc6.woff);
 }
+
 @font-face {
   font-family: ir-y-extrabold;
   src: url(../fonts/iranyekanwebextrabold.9346e9a2.9346e9a2.woff);
 }
+
 @font-face {
   font-family: ir-y-medium;
   src: url(../fonts/iranyekanwebmedium.2d4f96e5.2d4f96e5.woff);
 }
+
 @font-face {
   font-family: ir-y-regular;
   src: url(../fonts/iranyekanwebregular.b95439c1.b95439c1.woff);
 }
+
 @font-face {
   font-family: cubic;
   src: url(../fonts/cube.6cd810dd.6cd810dd.woff);
 }
+
 @keyframes story-rotation {
-  from {
-  }
+  from {}
+
   to {
     transform: rotate(1turn);
   }
 }
+
 body {
   max-width: 1600px;
 }
+
 /* header */
-header > div.header > div.header-ads {
+header>div.header>div.header-ads {
   margin-top: 2px;
 }
+
 header {
   z-index: 9999;
   position: sticky;
@@ -58,24 +67,29 @@ header {
   margin-bottom: 10px;
   width: 100%;
 }
-header > div.header > div.header-ads > a {
+
+header>div.header>div.header-ads>a {
   line-height: 0;
 }
-header > div.header > div.header-ads > a > img {
+
+header>div.header>div.header-ads>a>img {
   width: 100%;
   height: 60px;
 }
-header > div.header {
+
+header>div.header {
   width: 100%;
   height: fit-content;
 }
-header > div.header > div.upper-header {
+
+header>div.header>div.upper-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-block: 20px;
 }
-header > div.header > div.upper-header > div.logoheader {
+
+header>div.header>div.upper-header>div.logoheader {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -83,61 +97,51 @@ header > div.header > div.upper-header > div.logoheader {
   width: 50%;
   margin-right: 10px;
 }
-header > div.header > div.upper-header > div.logoheader > a {
+
+header>div.header>div.upper-header>div.logoheader>a {
   line-height: 0;
   width: 30%;
 }
 
-header > div.header > div.upper-header > div.logoheader > a > img {
+header>div.header>div.upper-header>div.logoheader>a>img {
   width: 100%;
 }
-header > div.header > div.upper-header > div.logoheader > div.searchbox {
+
+header>div.header>div.upper-header>div.logoheader>div.searchbox {
   background-color: #d8d9db;
   padding: 0 10px;
   border-radius: 30px;
   width: 80%;
   height: 30px;
 }
-header
-  > div.header
-  > div.upper-header
-  > div.logoheader
-  > div.searchbox
-  > label
-  > span {
+
+header>div.header>div.upper-header>div.logoheader>div.searchbox>label>span {
   color: #7b7b7c;
 }
-header
-  > div.header
-  > div.upper-header
-  > div.logoheader
-  > div.searchbox
-  > label
-  > input {
+
+header>div.header>div.upper-header>div.logoheader>div.searchbox>label>input {
   border: none;
   background-color: #d8d9db;
   width: 90%;
   height: 100%;
 }
-header
-  > div.header
-  > div.upper-header
-  > div.logoheader
-  > div.searchbox
-  > label
-  > input:focus {
+
+header>div.header>div.upper-header>div.logoheader>div.searchbox>label>input:focus {
   outline: none;
 }
-header > div.header > div.upper-header > div.botton-header {
+
+header>div.header>div.upper-header>div.botton-header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 15px;
 }
-header > div.header > div.upper-header > div.botton-header > a.bell {
+
+header>div.header>div.upper-header>div.botton-header>a.bell {
   font-size: 20px;
 }
-header > div.header > div.upper-header > div.botton-header > a.login {
+
+header>div.header>div.upper-header>div.botton-header>a.login {
   border: solid rgba(0, 0, 0, 0.247) 1px;
   border-radius: 5px;
   display: flex;
@@ -146,41 +150,48 @@ header > div.header > div.upper-header > div.botton-header > a.login {
   gap: 5px;
   padding: 5px 10px;
 }
-header > div.header > div.upper-header > div.botton-header > a.cart {
+
+header>div.header>div.upper-header>div.botton-header>a.cart {
   border-right: rgba(0, 0, 0, 0.247) 1px solid;
   padding-inline: 15px;
 }
+
 /* navbar */
-header > div.header > div.navbar {
+header>div.header>div.navbar {
   width: 100%;
 }
-header > div.header > div.navbar > nav {
+
+header>div.header>div.navbar>nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 10px;
   flex-wrap: wrap;
 }
-header > div.header > div.navbar > nav > div.navitems {
+
+header>div.header>div.navbar>nav>div.navitems {
   display: flex;
   align-items: center;
 }
-header > div.header > div.navbar > nav > div.navitems > a {
+
+header>div.header>div.navbar>nav>div.navitems>a {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
   padding-inline: 5px;
 }
-header > div.header > div.navbar > nav > div.navitems > a.menu {
+
+header>div.header>div.navbar>nav>div.navitems>a.menu {
   gap: 5px;
 }
-header > div.header > div.navbar > nav > div.navitems > a.navside {
+
+header>div.header>div.navbar>nav>div.navitems>a.navside {
   color: #5f5e5e;
   font-size: 14px;
 }
 
-header > div.header > div.navbar > nav > div.navitems > ul {
+header>div.header>div.navbar>nav>div.navitems>ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -190,40 +201,48 @@ header > div.header > div.navbar > nav > div.navitems > ul {
   padding-inline: 10px;
   margin-inline: 5px;
 }
-header > div.header > div.navbar > nav > div.navitems > ul > li {
+
+header>div.header>div.navbar>nav>div.navitems>ul>li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header > div.header > div.navbar > nav > div.navitems > ul > li > a {
+
+header>div.header>div.navbar>nav>div.navitems>ul>li>a {
   font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #5f5e5e;
 }
-header > div.header > div.navbar > nav > div.navitems > ul > li > a > span {
+
+header>div.header>div.navbar>nav>div.navitems>ul>li>a>span {
   color: #5f5e5e;
 }
-header > div.header > div.navbar > nav > div.addressbotton {
+
+header>div.header>div.navbar>nav>div.addressbotton {
   background-color: rgba(255, 92, 33, 0.274);
   border-radius: 30px;
   padding: 5px 10px;
   margin-inline: 10px;
 }
-header > div.header > div.navbar > nav > div.addressbotton > a {
+
+header>div.header>div.navbar>nav>div.addressbotton>a {
   color: #f55c25;
   font-weight: bold;
   font-size: 13px;
 }
-header > div.header > div.navbar > nav > div.addressbotton > a > span {
+
+header>div.header>div.navbar>nav>div.addressbotton>a>span {
   color: #f55c25;
 }
+
 /* slider 1 */
 section.story {
   height: fit-content;
   user-select: none;
 }
+
 section.story .swiper {
   width: 100%;
   height: 100%;
@@ -250,6 +269,7 @@ section.story .swiper-slide img {
   z-index: 1;
   position: relative;
 }
+
 section.story .swiper-slide a {
   font-family: ir-y-medium;
   width: 100%;
@@ -261,18 +281,15 @@ section.story .swiper-slide a {
   align-items: center;
   justify-content: center;
 }
+
 section.story .swiper-slide div.bgc {
-  background: conic-gradient(
-    #feda75,
-    #fa7e1e,
-    #d62976,
-    #962fbf,
-    #4f5bd5,
-    #feda75
-  );
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translateX(50%) translateY(-50%); */
+  background: conic-gradient(#feda75,
+      #fa7e1e,
+      #d62976,
+      #962fbf,
+      #4f5bd5,
+      #feda75);
+
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -283,11 +300,13 @@ section.story .swiper-slide div.bgc {
   position: absolute;
   z-index: 0;
 }
+
 section.story .swiper-slide p {
   margin: 0;
   font-size: x-small;
   cursor: default;
 }
+
 /* fixed bottons */
 section.super {
   position: fixed;
@@ -299,50 +318,56 @@ section.super {
   z-index: 2;
   height: 45px;
 }
-section.super > div > botton {
+
+section.super>div>botton {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
   cursor: pointer;
 }
-section.super > div > botton > span {
+
+section.super>div>botton>span {
   color: white;
   font-size: medium;
   user-select: none;
 }
-section.super > div > botton > span.basket {
+
+section.super>div>botton>span.basket {
   font-size: x-large;
 }
+
 section.poshtiban {
   position: fixed;
   bottom: 7%;
   right: 90%;
-  background-image: linear-gradient(
-    to right,
-    rgb(245, 91, 117),
-    rgb(46, 46, 248)
-  );
+  background-image: linear-gradient(to right,
+      rgb(245, 91, 117),
+      rgb(46, 46, 248));
   border-radius: 20px;
   padding: 8px;
   z-index: 2;
   height: 45px;
 }
-section.poshtiban > div > botton {
+
+section.poshtiban>div>botton {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   cursor: pointer;
 }
-section.poshtiban > div > botton > span {
+
+section.poshtiban>div>botton>span {
   color: white;
   user-select: none;
 }
+
 /* slider2 */
 section.slide {
   margin-block: 10px;
 }
+
 section.slide .swiper {
   width: 100%;
   height: 100%;
@@ -374,9 +399,10 @@ section.slide .swiper-button-next {
   position: absolute;
   top: 85%;
   right: 9% !important;
-  width: 40px;
-  height: 40px;
+  width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 50px);
 }
+
 section.slide .swiper-button-prev {
   background-color: #a9a9aa;
   border-radius: 50%;
@@ -384,9 +410,10 @@ section.slide .swiper-button-prev {
   position: absolute;
   top: 85%;
   right: 5% !important;
-  width: 40px;
-  height: 40px;
+  width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 50px);
 }
+
 /* RECOMMANDS */
 section.recommand {
   display: flex;
@@ -396,21 +423,25 @@ section.recommand {
   width: 100%;
   margin-block: 30px;
 }
-section.recommand > div {
+
+section.recommand>div {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 4%;
   flex-direction: column;
 }
-section.recommand > div > span {
+
+section.recommand>div>span {
   text-align: center;
   font-size: small;
 }
-section.recommand > div > a > img {
+
+section.recommand>div>a>img {
   width: 100%;
 }
-section.recommand > div.more {
+
+section.recommand>div.more {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -419,7 +450,8 @@ section.recommand > div.more {
   text-align: center;
   aspect-ratio: 1;
 }
-section.recommand > div.more > a {
+
+section.recommand>div.more>a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -430,6 +462,7 @@ section.recommand > div.more > a {
 
   text-align: center;
 }
+
 /* --------------------amazings swipwer---------------- */
 section.amazing {
   background-color: #ed1945;
@@ -440,6 +473,7 @@ section.amazing {
   margin-inline: 10px;
   padding-inline: 20px;
 }
+
 section.amazing div.amazing {
   width: 18%;
   padding: 20px 10px;
@@ -448,11 +482,13 @@ section.amazing div.amazing {
   align-items: center;
   justify-content: flex-start;
 }
+
 section.amazing .swiper {
   border-radius: 10px;
   width: 100%;
   height: 90% !important;
 }
+
 section.amazing .swiper-wrapper {
   height: 100% !important;
 }
@@ -464,7 +500,6 @@ section.amazing .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100% !important;
 }
 
 section.amazing .swiper-button-next {
@@ -473,28 +508,28 @@ section.amazing .swiper-button-next {
   text-align: center;
   padding: 10px;
   position: absolute;
-
-  width: 40px;
-  height: 40px;
+  width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 50px);
 }
+
 section.amazing .swiper-button-prev {
   background-color: #a9a9aa;
   border-radius: 50%;
   padding: 10px;
   position: absolute;
-
-  width: 40px;
-  height: 40px;
+  width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 50px);
 }
+
 section.amazing div.more {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  height: auto;
   box-sizing: border-box;
-  height: inherit;
 }
+
 section.amazing div.more a {
   display: flex;
   align-items: center;
@@ -502,6 +537,7 @@ section.amazing div.more a {
   flex-direction: column;
   gap: 10px;
 }
+
 section.amazing div.more svg {
   aspect-ratio: 1;
   border: 3px solid #1672dd;
@@ -510,19 +546,23 @@ section.amazing div.more svg {
   size: 10%;
   padding: 5px;
 }
+
 section.amazing div.more p {
   font-size: small;
 }
-section.amazing > div.swiper > div.swiper-wrapper > .swiper-slide > a {
+
+section.amazing>div.swiper>div.swiper-wrapper>.swiper-slide>a {
   width: 100%;
   height: 100%;
 }
+
 section.amazing .swiper-slide a img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 section.amazing .swiper-slide a div.price {
   display: flex;
   align-items: center;
@@ -531,10 +571,12 @@ section.amazing .swiper-slide a div.price {
   width: 100%;
   padding-inline: 3px;
 }
+
 section.amazing .swiper-slide a span {
   font-family: cubic;
   font-size: medium;
 }
+
 section.amazing div.swiper-slide a p {
   display: flex;
   width: fit-content;
@@ -555,6 +597,7 @@ section.amazing div.swiper-slide a span.takhfif {
   color: white;
   font-weight: bold;
 }
+
 section.amazing div.swiper-slide a span.pprice {
   color: #585858;
   text-decoration: solid #585858 line-through;
@@ -564,6 +607,7 @@ section.amazing div.swiper-slide a span.pprice {
   padding-inline: 20%;
   margin-block: 5px;
 }
+
 span.nprice {
   display: flex;
   gap: 2px;
@@ -571,6 +615,7 @@ span.nprice {
   justify-content: center;
   font-weight: bold;
 }
+
 /* box under the amazing 1 part */
 section.box {
   display: flex;
@@ -583,10 +628,11 @@ section.box {
   gap: 20px;
 }
 
-section.box > a > img {
+section.box>a>img {
   border-radius: 30px;
   width: 100%;
 }
+
 /* fast delivery */
 section.fastdelivery {
   margin: 0px 20px;
@@ -596,6 +642,7 @@ section.fastdelivery {
   border-radius: 10px;
   border: 1px solid black;
 }
+
 /* amazing 2  */
 section.amazing2 {
   display: flex;
@@ -607,6 +654,7 @@ section.amazing2 {
   margin: 20px 10px;
   padding: 20px;
 }
+
 section.amazing2 div.amazing2 {
   width: 18%;
   padding: 20px 10px;
@@ -617,6 +665,7 @@ section.amazing2 div.amazing2 {
   height: 100%;
   gap: 20px;
 }
+
 section.amazing2 div.amazing2 botton {
   background-color: white;
   border-radius: 10px;
@@ -625,13 +674,11 @@ section.amazing2 div.amazing2 botton {
   justify-content: center;
   padding: 10px 5px;
 }
+
 section.amazing2 .swiper {
   width: 100%;
-  height: 90% !important;
-  border-radius: 10px;
-}
-section.amazing2 .swiper-wrapper {
   height: 100%;
+  border-radius: 10px;
 }
 
 section.amazing2 .swiper-slide {
@@ -643,6 +690,7 @@ section.amazing2 .swiper-slide {
   align-items: center;
   background-color: white;
 }
+
 section.amazing2 .swiper-slide a {
   width: 100%;
   height: 100%;
@@ -651,15 +699,49 @@ section.amazing2 .swiper-slide a {
   justify-content: center;
   flex-direction: column;
 }
+
 section.amazing2 .swiper-slide a img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 section.amazing2 div.swiper-slide a p {
-  font-size: small;
+  font-size: clamp(3px, 2vw, 15px);
+  padding-inline: 3px;
 }
+
+section.amazing2 div.swiper-slide a span {
+  align-self: flex-end;
+}
+
+section.amazing2 div.swiper-slide a div.price {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  text-align: start;
+  font-size: clamp(3px, 2vw, 12px);
+}
+
+section.amazing2 div.swiper-slide a div.price span.pprice {
+  order: 2;
+  text-decoration: line-through #88898b 1px;
+  color: #88898b;
+}
+
+section.amazing2 div.swiper-slide a div.price span.takhfif {
+  background: crimson;
+  padding: 2px 4px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+section.amazing2 div.swiper-slide a span.nprice {
+  font-size: clamp(5px, 2vw, 15px);
+}
+
 section.amazing2 div.more {
   display: flex;
   flex-direction: column;
@@ -667,7 +749,9 @@ section.amazing2 div.more {
   justify-content: center;
   gap: 10px;
   box-sizing: content-box;
+  height: auto;
 }
+
 section.amazing2 div.more a {
   display: flex;
   flex-direction: column;
@@ -680,10 +764,12 @@ section.amazing2 div.more a {
   line-height: 0;
   padding: 5px;
 }
+
 section.amazing2 div.more p {
   font-size: small;
   color: #585858;
 }
+
 /********************** daste bandi */
 section.category {
   margin: 0px 20px;
@@ -693,6 +779,7 @@ section.category {
   justify-content: center;
   gap: 30px;
 }
+
 section.category .swiper {
   width: 100%;
   height: 100%;
@@ -702,7 +789,7 @@ section.category .swiper {
 section.category .swiper-slide {
   text-align: center;
   font-size: 18px;
-
+  gap: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -716,6 +803,239 @@ section.category .swiper-slide img {
   object-fit: cover;
   border-radius: 50%;
 }
+
 section.category .swiper-slide span {
   font-size: small;
+  height: 36px;
+  display: block;
+}
+
+/*********** under daste bandi *******************/
+section.undercategory {
+  display: flex;
+  width: 98%;
+  margin: 20px auto;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+section.undercategory a {
+  line-height: none;
+  flex-grow: 1;
+}
+
+section.undercategory a img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+/* fav brands section */
+section.brands {
+  width: 98%;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  flex-direction: column;
+  border: solid 1px #88898b;
+  border-radius: 20px;
+}
+
+section.brands p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: larger;
+}
+
+section.brands .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+section.brands .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #989a9e;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+section.brands .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  width: 78px;
+  aspect-ratio: 1;
+  background-color: transparent;
+}
+
+section.brands .swiper-slide h4 {
+  font-size: clamp(8px, 3vw, 12px);
+  color: #585858;
+  height: auto;
+  margin-block: 5px;
+ 
+}
+
+section.brands div.swiper-button-next,
+section.brands div.swiper-button-prev {
+  background-color: #ffffff;
+  padding: 7px;
+  border-radius: 50%;
+  font-size: 10px;
+  width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 50px);
+}
+
+/* taste container */
+section.taste {
+  width: 98%;
+  margin: 20px auto;
+  border: 1px solid #88898b;
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.taste div.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.taste div.title a {
+  color: #3f4064;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #f0f0f1;
+  font-size: clamp(5px, 2vw, 12px);
+  display: flex;
+  align-items: center;
+}
+
+section.taste div.title div.text h2 {
+  font-size: large;
+  font-weight: 500;
+}
+
+section.taste div.title div.text span {
+  color: #88898b;
+  font-size: small;
+}
+
+section.taste .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+section.taste .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #88898b;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.taste .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.taste .swiper-slide a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+section.taste div.swiper-slide a p {
+  font-size: clamp(3px, 2vw, 15px);
+  padding-inline: 3px;
+}
+
+section.taste div.swiper-slide a div.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+}
+
+section.taste div.swiper-slide a div.price div.sup {
+  font-size: clamp(3px, 2vw, 12px);
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  align-items: center;
+}
+
+section.taste div.swiper-slide a div.price div.sup span.off {
+  background: crimson;
+  border-radius: 20px;
+
+  padding: 1px 5px;
+}
+
+section.taste div.swiper-slide a div.price div.sup span.pprice {
+  order: 2;
+  color: #88898b;
+  text-decoration: line-through 1px #88898b;
+}
+
+section.taste div.swiper-slide a div.price span.nprice {
+  text-align: end;
+  font-size: clamp(5px, 2.5vw, 18px);
+}
+
+section.taste div.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: content-box;
+  height: auto;
+}
+
+section.taste div.more a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 0;
+  padding: 5px;
+}
+
+section.taste div.more p {
+  font-size: small;
+  color: #585858;
+}
+
+section.taste div.swiper-button-next,
+section.taste div.swiper-button-prev {
+  background-color: #7b7b7c;
+  padding: 7px;
+  border-radius: 50%;
+  font-size: 10px;
+  width: clamp(30px, 3vw, 50px);
+  height: clamp(30px, 3vw, 50px);
 }
