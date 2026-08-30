@@ -25,7 +25,7 @@
             /></a>
             <div class="searchbox">
               <label for="searchbox">
-                <span class="fas fa-search"></span>
+                <button class="fas fa-search"></button>
                 <input
                   type="text"
                   name="searchbox"
@@ -103,7 +103,7 @@
         <div class="navbar">
           <nav>
             <div class="navitems">
-              <a href="#" class="menu">
+              <a href="#" class="menu not">
                 <svg
                   xmlns:xlink="http://www.w3.org/1999/xlink"
                   xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@
               <a href="#" class="navside">در دیجی کالا بفروشید!</a>
             </div>
             <div class="addressbotton">
-              <a href="#"
+              <a href="#" class="not"
                 ><span class="fas fa-map-marker-alt"></span>
                 انتخاب آدرس
               </a>
@@ -247,7 +247,7 @@
           </button>
         </div>
       </section>
-      <!--------------------------------------------------------------------- slider1 -->
+      <!--------------------------------------------------------------------- story -->
       <section class="story">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
@@ -413,7 +413,7 @@
           </div>
         </div>
       </section>
-      <!------------------- slider2 -->
+      <!------------------- auto -->
       <section class="slide">
         <div class="swiper mySwiperr">
           <div class="swiper-wrapper">
@@ -2414,7 +2414,7 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
-      
+
       <!-- most sales -->
       <section class="most">
         <div class="heading"><h3>پرفروش‌ترین کالاها</h3></div>
@@ -2530,7 +2530,7 @@
       <div class="acces">
         <div class="top">
           <img src="./images/svg/لوگوی دیجیکالا.svg" />
-          <a href="#top" target="_top">
+          <a href="#" target="_top">
             بازگشت به بالا
             <svg
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -2560,9 +2560,80 @@
           <span> ۷ روز هفته، ۲۴ ساعته پاسخگوی شما هستیم</span>
         </div>
         <div class="services">
-          
+          <a href="#"><img src="./images/footer-services/days-return.svg" alt="">
+          <p>هفت روز ضمانت بازگشت کالا</p></a>
+          <a href="#"><img src="./images/footer-services/cash-on-delivery.svg" alt="">
+            <p>امکان پرداخت در محل</p>
+          </a>
+          <a href="#"><img src="./images/footer-services/express-delivery.svg " alt="">
+          <p>اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس</p></a>
+          <a href="#"><img src="./images/footer-services/original-products.svg" alt="">
+          <p>ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ</p></a>
+          <a href="#"><img src="./images/footer-services/support.svg" alt="">
+          <p>۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ</p></a>
         </div>
       </div>
+      <section class="ease">
+        <div class="ease">
+          <div class="with">
+            <h2>با دیجی‌کالا</h2>
+            <a href="#">اتاق خبر دیجی کالا</a>
+            <a href="#">فروش در دیجیکالا</a>
+            <a href="#">فرصت های شغلی</a>
+            <a href="#">گزارش تخلف در دیجیکالا</a>
+            <a href="#">تماس با دیجیکالا</a>
+            <a href="#">درباره دیجیکالا</a>
+          </div>
+          <div class="costumer">
+            <h2>خدمات مشتریان</h2>
+            <a href="#">
+              پاسخ به پرسش های متداول
+            </a>
+            <a href="#">
+              رویه های بازگرداندن کالا
+            </a>
+            <a href="#">
+              شرایط استفاده
+            </a>
+            <a href="#">
+              حریم خصوصی
+            </a>
+            <a href="#">
+              گذارش باگ
+            </a>
+          </div>
+          <div class="guide">
+            <h2>راهنمای خرید از دیجی‌کالا</h2>
+            <a href="#">
+              نحوه ثبت سفارش
+            </a><a href="#">
+              رویه ارسال سفارش
+            </a><a href="#">شیوه پرداخت</a>
+          </div>
+          <div class="comunication">
+            <div class="social">
+              <h2>همراه ما باشید!</h2>
+              <div class="links">
+                <a href="#"><img src="./images/info-call/ap.svg" alt=""></a>
+                <a href="#"><img src="./images/info-call/bl.svg" alt=""></a>
+                <a href="#"><img src="./images/info-call/ig.svg" alt=""></a>
+                <a href="#"><img src="./images/info-call/in.svg" alt=""></a>
+                <a href="#"><img src="./images/info-call/tweet.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="email">
+              <form action="">
+                <label for="email">
+                  با ثبت ایمیل، از جدید‌ترین تخفیف‌ها با‌خبر شوید
+                </label>
+                <div>
+                <input type="email" name="email" id="email" placeholder="ایمیل شما">
+                <input type="submit" value="ثبت"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </footer>
     <!--------------------- swiper scripts ----------------->
     <script src="./swiper/swiper-bundle.min.js"></script>
@@ -2620,7 +2691,7 @@
       });
     </script>
     <script>
-      // amazing1,2
+      // amazing2
       var swiper = new Swiper(".mySwipersa", {
         slidesPerView: 7.5,
         spaceBetween: 8,
@@ -2648,14 +2719,11 @@
         },
         freeMode: true,
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+       
       });
     </script>
     <script>
-      // amazing1,2
+      // amazing1
       var swiper = new Swiper(".mySwipers", {
         slidesPerView: 7.5,
         spaceBetween: 8,
@@ -2736,6 +2804,7 @@
       });
     </script>
     <script>
+      // fav brands
       var swiper = new Swiper(".mySwiperf", {
         slidesPerView: 13.5,
         spaceBetween: 10,

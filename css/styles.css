@@ -39,17 +39,16 @@
 }
 
 @keyframes story-rotation {
-  from {}
+  from {
+  }
 
   to {
     transform: rotate(1turn);
   }
 }
 
-
-
 /* header */
-header>div.header>div.header-ads {
+header > div.header > div.header-ads {
   margin-top: 2px;
 }
 
@@ -66,28 +65,28 @@ header {
   width: 100%;
 }
 
-header>div.header>div.header-ads>a {
+header > div.header > div.header-ads > a {
   line-height: 0;
 }
 
-header>div.header>div.header-ads>a>img {
+header > div.header > div.header-ads > a > img {
   width: 100%;
   height: 60px;
 }
 
-header>div.header {
+header > div.header {
   width: 100%;
   height: fit-content;
 }
 
-header>div.header>div.upper-header {
+header > div.header > div.upper-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-block: 20px;
 }
 
-header>div.header>div.upper-header>div.logoheader {
+header > div.header > div.upper-header > div.logoheader {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -96,50 +95,85 @@ header>div.header>div.upper-header>div.logoheader {
   margin-right: 10px;
 }
 
-header>div.header>div.upper-header>div.logoheader>a {
+header > div.header > div.upper-header > div.logoheader > a {
   line-height: 0;
   width: 30%;
 }
 
-header>div.header>div.upper-header>div.logoheader>a>img {
+header > div.header > div.upper-header > div.logoheader > a > img {
   width: 100%;
 }
 
-header>div.header>div.upper-header>div.logoheader>div.searchbox {
+header > div.header > div.upper-header > div.logoheader > div.searchbox {
   background-color: #d8d9db;
   padding: 0 10px;
   border-radius: 30px;
   width: 80%;
   height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header
+  > div.header
+  > div.upper-header
+  > div.logoheader
+  > div.searchbox
+  > label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-header>div.header>div.upper-header>div.logoheader>div.searchbox>label>span {
+header
+  > div.header
+  > div.upper-header
+  > div.logoheader
+  > div.searchbox
+  > label
+  > button {
+  background-color: transparent;
+  border: none;
   color: #7b7b7c;
 }
 
-header>div.header>div.upper-header>div.logoheader>div.searchbox>label>input {
+header
+  > div.header
+  > div.upper-header
+  > div.logoheader
+  > div.searchbox
+  > label
+  > input {
   border: none;
   background-color: #d8d9db;
   width: 90%;
   height: 100%;
 }
 
-header>div.header>div.upper-header>div.logoheader>div.searchbox>label>input:focus {
+header
+  > div.header
+  > div.upper-header
+  > div.logoheader
+  > div.searchbox
+  > label
+  > input:focus {
   outline: none;
 }
 
-header>div.header>div.upper-header>div.botton-header {
+header > div.header > div.upper-header > div.botton-header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 15px;
 }
 
-header>div.header>div.upper-header>div.botton-header>a.bell {
+header > div.header > div.upper-header > div.botton-header > a.bell {
   font-size: 20px;
 }
 
-header>div.header>div.upper-header>div.botton-header>a.login {
+header > div.header > div.upper-header > div.botton-header > a.login {
   border: solid rgba(0, 0, 0, 0.247) 1px;
   border-radius: 5px;
   display: flex;
@@ -149,17 +183,17 @@ header>div.header>div.upper-header>div.botton-header>a.login {
   padding: 5px 10px;
 }
 
-header>div.header>div.upper-header>div.botton-header>a.cart {
+header > div.header > div.upper-header > div.botton-header > a.cart {
   border-right: rgba(0, 0, 0, 0.247) 1px solid;
   padding-inline: 15px;
 }
 
 /* navbar */
-header>div.header>div.navbar {
+header > div.header > div.navbar {
   width: 100%;
 }
 
-header>div.header>div.navbar>nav {
+header > div.header > div.navbar > nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,12 +201,12 @@ header>div.header>div.navbar>nav {
   flex-wrap: wrap;
 }
 
-header>div.header>div.navbar>nav>div.navitems {
+header > div.header > div.navbar > nav > div.navitems {
   display: flex;
   align-items: center;
 }
 
-header>div.header>div.navbar>nav>div.navitems>a {
+header > div.header > div.navbar > nav > div.navitems > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,16 +214,16 @@ header>div.header>div.navbar>nav>div.navitems>a {
   padding-inline: 5px;
 }
 
-header>div.header>div.navbar>nav>div.navitems>a.menu {
+header > div.header > div.navbar > nav > div.navitems > a.menu {
   gap: 5px;
 }
 
-header>div.header>div.navbar>nav>div.navitems>a.navside {
+header > div.header > div.navbar > nav > div.navitems > a.navside {
   color: #5f5e5e;
   font-size: 14px;
 }
 
-header>div.header>div.navbar>nav>div.navitems>ul {
+header > div.header > div.navbar > nav > div.navitems > ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -200,13 +234,13 @@ header>div.header>div.navbar>nav>div.navitems>ul {
   margin-inline: 5px;
 }
 
-header>div.header>div.navbar>nav>div.navitems>ul>li {
+header > div.header > div.navbar > nav > div.navitems > ul > li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-header>div.header>div.navbar>nav>div.navitems>ul>li>a {
+header > div.header > div.navbar > nav > div.navitems > ul > li > a {
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -214,25 +248,43 @@ header>div.header>div.navbar>nav>div.navitems>ul>li>a {
   color: #5f5e5e;
 }
 
-header>div.header>div.navbar>nav>div.navitems>ul>li>a>span {
+header > div.header > div.navbar > nav > div.navitems > ul > li > a > span {
   color: #5f5e5e;
 }
 
-header>div.header>div.navbar>nav>div.addressbotton {
+header > div.header > div.navbar > nav > div.addressbotton {
   background-color: rgba(255, 92, 33, 0.274);
   border-radius: 30px;
   padding: 5px 10px;
   margin-inline: 10px;
 }
 
-header>div.header>div.navbar>nav>div.addressbotton>a {
+header > div.header > div.navbar > nav > div.addressbotton > a {
   color: #f55c25;
   font-weight: bold;
   font-size: 13px;
 }
 
-header>div.header>div.navbar>nav>div.addressbotton>a>span {
+header > div.header > div.navbar > nav > div.addressbotton > a > span {
   color: #f55c25;
+}
+header > div.header > div.navbar > nav a {
+  position: relative;
+}
+header > div.header > div.navbar > nav a::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 0;
+  height: 1.5px;
+  top: 120%;
+  left: 0;
+
+  transition: all linear 0.2s;
+}
+header > div.header > div.navbar > nav a:not(.not):hover::before {
+  width: 100%;
 }
 
 main {
@@ -242,7 +294,7 @@ main {
   padding-bottom: 30px;
 }
 
-/* slider 1 */
+/* story */
 section.story {
   height: fit-content;
   user-select: none;
@@ -288,18 +340,20 @@ section.story .swiper-slide a {
 }
 
 section.story .swiper-slide div.bgc {
-  background: conic-gradient(#feda75,
-      #fa7e1e,
-      #d62976,
-      #962fbf,
-      #4f5bd5,
-      #feda75);
+  background: conic-gradient(
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5,
+    #feda75
+  );
 
   width: 100%;
   height: 100%;
   border-radius: 50%;
   animation-name: story-rotation;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   position: absolute;
@@ -324,7 +378,7 @@ section.super {
   height: 45px;
 }
 
-section.super>div>button {
+section.super > div > button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,13 +388,13 @@ section.super>div>button {
   border: none;
 }
 
-section.super>div>button>span {
+section.super > div > button > span {
   color: white;
   font-size: medium;
   user-select: none;
 }
 
-section.super>div>button>span.basket {
+section.super > div > button > span.basket {
   font-size: x-large;
 }
 
@@ -348,16 +402,18 @@ section.poshtiban {
   position: fixed;
   bottom: 7%;
   right: 90%;
-  background-image: linear-gradient(to right,
-      rgb(245, 91, 117),
-      rgb(46, 46, 248));
+  background-image: linear-gradient(
+    to right,
+    rgb(245, 91, 117),
+    rgb(46, 46, 248)
+  );
   border-radius: 20px;
   padding: 8px;
   z-index: 2;
   height: 45px;
 }
 
-section.poshtiban>div>button {
+section.poshtiban > div > button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,14 +423,15 @@ section.poshtiban>div>button {
   border: none;
 }
 
-section.poshtiban>div>button>span {
+section.poshtiban > div > button > span {
   color: white;
   user-select: none;
 }
 
-/* slider2 */
+/* autoplay */
 section.slide {
   margin-block: 10px;
+  background-attachment: local;
 }
 
 section.slide .swiper {
@@ -433,7 +490,7 @@ section.recommand {
   margin-block: 30px;
 }
 
-section.recommand>div {
+section.recommand > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -441,16 +498,16 @@ section.recommand>div {
   flex-direction: column;
 }
 
-section.recommand>div>span {
+section.recommand > div > span {
   text-align: center;
   font-size: small;
 }
 
-section.recommand>div>a>img {
+section.recommand > div > a > img {
   width: 100%;
 }
 
-section.recommand>div.more {
+section.recommand > div.more {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -460,7 +517,7 @@ section.recommand>div.more {
   aspect-ratio: 1;
 }
 
-section.recommand>div.more>a {
+section.recommand > div.more > a {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -560,7 +617,7 @@ section.amazing div.more p {
   font-size: small;
 }
 
-section.amazing>div.swiper>div.swiper-wrapper>.swiper-slide>a {
+section.amazing > div.swiper > div.swiper-wrapper > .swiper-slide > a {
   width: 100%;
   height: 100%;
 }
@@ -629,15 +686,17 @@ span.nprice {
 section.box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 98%;
   gap: 5%;
   flex-wrap: nowrap;
   margin: 20px auto;
   gap: 20px;
 }
-
-section.box>a>img {
+section.box > a {
+  flex: 1;
+}
+section.box > a > img {
   border-radius: 30px;
   width: 100%;
 }
@@ -683,6 +742,7 @@ section.amazing2 div.amazing2 button {
   justify-content: center;
   padding: 10px 5px;
   border: none;
+  transition: all linear 0.5s;
 }
 
 section.amazing2 div.amazing2 button:hover {
@@ -896,7 +956,6 @@ section.brands .swiper-slide h4 {
   color: #585858;
   height: auto;
   margin-block: 5px;
-
 }
 
 section.brands div.swiper-button-next,
@@ -1140,48 +1199,151 @@ footer {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  padding-inline: 20px;
 }
 
-footer>div.acces {
-
-  width: 98%;
+footer > div.acces {
+  width: 100%;
 }
 
-footer>div.acces>div.top {
+footer > div.acces > div.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   margin-top: 30px;
 }
-footer>div.acces>div.top>img{
+footer > div.acces > div.top > img {
   width: 16%;
 }
-footer>div.acces>div.top>a{
+footer > div.acces > div.top > a {
   display: flex;
   align-items: center;
   gap: 3px;
-  font-size: clamp(8px , 3vw , 13px);
+  font-size: clamp(8px, 3vw, 13px);
   color: #88898b;
   border: #88898b solid 1px;
   border-radius: 10px;
-  padding: 6px 10px ;
-  
+  padding: 6px 10px;
 }
-footer>div.acces>div.callinfo{
+footer > div.acces > div.callinfo {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: start;
   margin-top: 15px;
 }
-footer>div.acces>div.callinfo>span{
+footer > div.acces > div.callinfo > span {
   padding-inline: 15px;
   color: #7b7b7c;
-  font-size: clamp(
-    6px,2vw,12px
-  );
+  font-size: clamp(6px, 2vw, 12px);
 }
-footer>div.acces>div.callinfo>span.mid{
+footer > div.acces > div.callinfo > span.mid {
   border-inline: 1px solid #88898b;
+}
+footer > div.acces > div.services{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  
+}
+footer > div.acces > div.services>a{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer > div.acces > div.services>a>p{
+  font-size: clamp(8px , 3vw , 10px);
+}
+footer>section.ease{
+  width: 100%;
+}
+footer>section.ease>div.ease{
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+
+}
+footer>section.ease>div.ease>div.with{
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content:center;
+  flex-direction: column;
+  gap: 10px;
+  >h2{
+    font-size: clamp(16px , 4vw , 18px);
+    font-weight: normal;
+  }
+  >a{
+     font-size: clamp(10px , 4vw , 14px);
+     color: #88898b;
+  }
+}
+footer>section.ease>div.ease>div.costumer{
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  >h2{
+    font-size: clamp(16px , 4vw , 18px);
+    font-weight: normal;
+  }
+   >a{
+     font-size: clamp(10px , 4vw , 14px);
+     color: #88898b;
+  }
+}
+footer>section.ease>div.ease>div.guide{
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  >h2{
+    font-size: clamp(16px , 4vw , 18px);
+    font-weight: normal;
+  }
+   >a{
+     font-size: clamp(10px , 4vw , 14px);
+     color: #88898b;
+  }
+}
+footer>section.ease>div.ease>div.comunication{
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+ 
+}
+footer>section.ease>div.ease>div.comunication>div.social{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+>h2{
+    font-size: clamp(16px , 4vw , 18px);
+    font-weight: normal;
+  }
+}
+footer>section.ease>div.ease>div.comunication>div.social>div.links{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+footer>section.ease>div.ease>div.comunication>div.social>div.links>a{
+  flex-grow: 1;
 }
