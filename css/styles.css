@@ -46,7 +46,9 @@
     transform: rotate(1turn);
   }
 }
-
+html {
+  overflow-x: hidden;
+}
 /* header */
 header > div.header > div.header-ads {
   margin-top: 2px;
@@ -214,8 +216,13 @@ header > div.header > div.navbar > nav > div.navitems > a {
   padding-inline: 5px;
 }
 
-header > div.header > div.navbar > nav > div.navitems > a.menu {
+header > div.header > div.navbar > nav > div.navitems > span.menu {
   gap: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: auto;
+  cursor: pointer;
 }
 
 header > div.header > div.navbar > nav > div.navitems > a.navside {
@@ -271,11 +278,12 @@ header > div.header > div.navbar > nav > div.addressbotton > a > span {
 header > div.header > div.navbar > nav a {
   position: relative;
 }
-header > div.header > div.navbar > nav a::before {
+.border::before {
   display: block;
   content: "";
   position: absolute;
   background-color: red;
+  margin: auto;
   width: 0;
   height: 1.5px;
   top: 120%;
@@ -283,8 +291,8 @@ header > div.header > div.navbar > nav a::before {
 
   transition: all linear 0.2s;
 }
-header > div.header > div.navbar > nav a:not(.not):hover::before {
-  width: 100%;
+.border:hover::before {
+  width: 98%;
 }
 
 main {
@@ -293,7 +301,137 @@ main {
   box-sizing: content-box;
   padding-bottom: 30px;
 }
+div.back {
+  width: 100%;
+  height: 100dvh;
+  background-color: #88898b87;
+  position: fixed;
+  z-index: 10;
+  display: none;
+}
+/* header catagory pop */
+section.pop {
+  width: 65dvw;
+  height: 70dvh;
+  position: absolute;
+  background-color: white;
+  z-index: -1;
+  top: 100%;
+  left: -690%;
+  display: block;
+  transform: translateY(-30px);
+  box-sizing: content-box;
+}
 
+section.pop > div.pop {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 20px 0;
+  height: inherit;
+}
+section.pop > div.invisible {
+  width: 100%;
+  height: 40px;
+  background-color: #23212100;
+}
+section.pop > div.pop > div.title {
+  flex: 2;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #aaaaac;
+}
+section.pop > div.pop > div.title > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+section.pop > div.pop > div.title > ul > li {
+  background-color: #aaaaac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: small;
+  flex-shrink: 0;
+}
+
+section.pop > div.pop > div.title > ul > li > a {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  background-color: transparent;
+}
+section.pop > div.pop > div.title > ul > li > a:hover {
+  background-color: #ffffff;
+  color: crimson;
+}
+section.pop > div.pop > div.items {
+  flex: 6;
+  height: 100%;
+  background-color: white;
+}
+section.pop > div.pop > div.items > * {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+section.pop > div.pop > div.items > div#mobile {
+  display: flex;
+}
+section.pop > div.pop > div.items > div#mobile > a {
+  padding: 5px 10px;
+  width: 100%;
+  color: #1672dd;
+  font-size: small;
+}
+section.pop > div.pop > div.items > div#mobile > div.types {
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-evenly;
+  padding: 10px 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow-y: auto;
+  row-gap: 10px;
+}
+section.pop > div.pop > div.items > div#mobile > div.types > div {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  height: fit-content;
+}
+section.pop > div.pop > div.items > div#mobile > div.types > div > *:hover {
+  color: crimson;
+}
+section.pop > div.pop > div.items > div#mobile > div.types > div > h3 {
+  border-right: 2px crimson solid;
+  padding-right: 5px;
+}
+section.pop > div.pop > div.items > div#mobile > div.types > div > span {
+  color: #88898b;
+  font-size: small;
+}
 /* story */
 section.story {
   height: fit-content;
@@ -1241,109 +1379,228 @@ footer > div.acces > div.callinfo > span {
 footer > div.acces > div.callinfo > span.mid {
   border-inline: 1px solid #88898b;
 }
-footer > div.acces > div.services{
+footer > div.acces > div.services {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px auto;
-  
 }
-footer > div.acces > div.services>a{
+footer > div.acces > div.services > a {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-footer > div.acces > div.services>a>p{
-  font-size: clamp(8px , 3vw , 10px);
+footer > div.acces > div.services > a > p {
+  font-size: clamp(8px, 3vw, 10px);
 }
-footer>section.ease{
+footer > section.ease {
   width: 100%;
 }
-footer>section.ease>div.ease{
+footer > section.ease > div.ease {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
-
 }
-footer>section.ease>div.ease>div.with{
+footer > section.ease > div.ease > div.with {
   flex-grow: 1;
   display: flex;
   align-items: flex-start;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  >h2{
-    font-size: clamp(16px , 4vw , 18px);
+  gap: 15px;
+  > h2 {
+    font-size: clamp(16px, 4vw, 18px);
     font-weight: normal;
   }
-  >a{
-     font-size: clamp(10px , 4vw , 14px);
-     color: #88898b;
+  > a {
+    font-size: clamp(10px, 4vw, 14px);
+    color: #88898b;
   }
 }
-footer>section.ease>div.ease>div.costumer{
+footer > section.ease > div.ease > div.costumer {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  > h2 {
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: normal;
+  }
+  > a {
+    font-size: clamp(10px, 4vw, 14px);
+    color: #88898b;
+  }
+}
+footer > section.ease > div.ease > div.guide {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  > h2 {
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: normal;
+  }
+  > a {
+    font-size: clamp(10px, 4vw, 14px);
+    color: #88898b;
+  }
+}
+footer > section.ease > div.ease > div.comunication {
   flex-grow: 1;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  >h2{
-    font-size: clamp(16px , 4vw , 18px);
-    font-weight: normal;
-  }
-   >a{
-     font-size: clamp(10px , 4vw , 14px);
-     color: #88898b;
-  }
 }
-footer>section.ease>div.ease>div.guide{
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-  >h2{
-    font-size: clamp(16px , 4vw , 18px);
-    font-weight: normal;
-  }
-   >a{
-     font-size: clamp(10px , 4vw , 14px);
-     color: #88898b;
-  }
-}
-footer>section.ease>div.ease>div.comunication{
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
- 
-}
-footer>section.ease>div.ease>div.comunication>div.social{
+footer > section.ease > div.ease > div.comunication > div.social {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
->h2{
-    font-size: clamp(16px , 4vw , 18px);
+  > h2 {
+    font-size: clamp(16px, 4vw, 18px);
     font-weight: normal;
   }
 }
-footer>section.ease>div.ease>div.comunication>div.social>div.links{
+footer > section.ease > div.ease > div.comunication > div.social > div.links {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-footer>section.ease>div.ease>div.comunication>div.social>div.links>a{
+footer
+  > section.ease
+  > div.ease
+  > div.comunication
+  > div.social
+  > div.links
+  > a {
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer > section.ease > div.ease > div.comunication > div.email {
+  width: 100%;
+  margin-block: 20px;
+}
+footer > section.ease > div.ease > div.comunication > div.email > form {
+  width: 100%;
+}
+footer > section.ease > div.ease > div.comunication > div.email > form > h2 {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: large;
+}
+footer > section.ease > div.ease > div.comunication > div.email > form > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 2%;
+}
+footer
+  > section.ease
+  > div.ease
+  > div.comunication
+  > div.email
+  > form
+  > div
+  > input#email {
+  background-color: #f0f0f1;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  flex-grow: 4;
+  font-size: large;
+}
+footer
+  > section.ease
+  > div.ease
+  > div.comunication
+  > div.email
+  > form
+  > div
+  > input#email::placeholder {
+  font-size: large;
+}
+footer
+  > section.ease
+  > div.ease
+  > div.comunication
+  > div.email
+  > form
+  > div
+  > input#email:focus {
+  outline: none;
+}
+footer
+  > section.ease
+  > div.ease
+  > div.comunication
+  > div.email
+  > form
+  > div
+  > input#submit {
+  background-color: #b2b4b8;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+  font-size: large;
+}
+footer > section.app {
+  width: 100%;
+  margin-block: 20px;
+}
+footer > section.app > div.app {
+  width: 100%;
+  background-color: #3c4b6d;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer > section.app > div.app > div.txt {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+footer > section.app > div.app > div.txt > img {
+  object-fit: cover;
+  width: 10%;
+  aspect-ratio: 1;
+}
+footer > section.app > div.app > div.txt > span {
+  color: white;
+  font-size: large;
+  font-weight: 600;
+}
+footer > section.app > div.app > div.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+footer > section.app > div.app > div.button > a#more {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
 }
