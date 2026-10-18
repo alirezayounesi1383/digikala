@@ -318,7 +318,7 @@ section.pop {
   z-index: -1;
   top: 100%;
   left: -690%;
-  display: block;
+  display: none;
   transform: translateY(-30px);
   box-sizing: content-box;
 }
