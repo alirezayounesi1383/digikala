@@ -1,0 +1,161 @@
+<div>
+<h3>جهیزیه</h3>
+<span></span>
+</div>
+
+<div>
+<h3>تهویه، سرمایش و گرمایش</h3>
+<span>هیتر و بخاری برقی</span>
+<span>شوفاژ برقی</span>
+<span>رادیاتور</span>
+<span>تصفیه کننده هوا</span>
+<span>کولر سلولوزی</span>
+<span>کولر گازی</span>
+<span>کولر آبی</span>
+<span>پنکه</span>
+<span>پنکه شارژی</span>
+<span>پکیج دیواری</span>
+<span>آبگرمکن</span>
+<span>بخاری گازی</span>
+</div>
+
+<div>
+<h3>یخچال فریزیر</h3>
+<span>یخچال فریزر ساید بای ساید</span>
+<span>یخچال فریزر دوقلو</span>
+<span>یخچال فریزر هتلی</span>
+<span>یخچال فریزر بالا پایین(کمبی)</span>
+</div>
+
+<div>
+<h3>تلویزیون</h3>
+<span>تلویزیون سونی</span>
+<span>تلویزیون هایسنس</span>
+<span>تلویزیون جی پلاس</span>
+<span>تلویزیون ایکس ویژن</span>
+<span>تلویزیون اندروید</span>
+<span>تلویزیون 4k</span>
+<span>تلویزیون گیمینگ</span>
+<span>تلویزیون OLED</span>
+<span>تلویزیون QLED</span>
+</div>
+
+<div>
+<h3>تلویزیون براساس سایز</h3>
+<span>تلویزیون ۸۵ اینچ</span>
+<span>تلویزیون ۷۵ اینچ</span>
+<span>تلویزیون ۷۰ اینچ</span>
+<span>تلویزیون ۶۵ اینچ</span>
+<span>تلویزیون ۶۰ اینچ</span>
+<span>تلویزیون ۵۵ اینچ</span>
+<span>تلویزیون ۵۰ اینچ</span>
+</div>
+
+<div>
+<h3>ماشین لباسشویی</h3>
+<span>ماشین لباسشویی ال جی</span>
+<span>ماشین لباسشویی دوو</span>
+<span>ماشین لباسشویی ایکس ویژن</span>
+<span>ماشین لباسشویی پاکشوما</span>
+<span>ماشین لباسشویی اسنوا</span>
+<span>مینی واش</span>
+</div>
+
+<div>
+<h3>جاروبرقی</h3>
+<span>جارو رباتیک</span>
+<span>جارو شارژی</span>
+<span>لوازم جانبی جاروبرقی و بخارشور</span>
+</div>
+
+<div>
+<h3>ماشین ظرفشویی</h3>
+<span>ماشین ظرفشویی بوش</span>
+<span>ماشین ظرفشویی ال جی</span>
+<span>ماشین ظرفشویی دوو</span>
+<span>ماشین ظرفشویی پاکشوما</span>
+<span>ماشین ظرفشویی ایکس ویژن</span>
+</div>
+
+<div>
+<h3>صوتی و تصویری</h3>
+<span>رادیو</span>
+<span>ساندبار</span>
+<span>ویدیو پروژکتور</span>
+<span>اندروید باکس</span>
+<span>پخش کننده خانگی</span>
+<span>لوازم جانبی صوتی و تصویری</span>
+<span>ریموت کنترل</span>
+</div>
+
+<div>
+<h3>چرخ خیاطی</h3>
+<span>چرخ خیاطی صنعتی</span>
+<span>چرخ خیاطی خانگی</span>
+<span>چرخ خیاطی ژانومه</span>
+<span>چرخ خیاطی کاچیران</span>
+</div>
+
+<div>
+<h3>نوشیدنی ساز</h3>
+<span>قهوه ساز</span>
+<span>اسپرسو ساز</span>
+<span>چای ساز</span>
+<span>کتری برقی</span>
+<span>سماور برقی</span>
+<span>آبسرد کن</span>
+<span>آبمیوه گیری</span>
+<span>آب مرکبات گیر</span>
+<span>آسیاب قهوه</span>
+</div>
+
+<div>
+<h3>اتو</h3>
+<span>اتو پرس</span>
+<span>اتو ایستاده</span>
+<span>اتو بخار</span>
+<span>بخارگر</span>
+</div>
+
+<div>
+<h3>لوازم پخت و پز</h3>
+<span>تخم مرغ پز</span>
+<span>سرخ کن بدون روغن (air fryer)</span>
+<span>مایکروویو</span>
+<span>مایکروفر</span>
+<span>اجاق گاز</span>
+<span>پلوپز</span>
+<span>ساندویچ ساز و وافل ساز</span>
+<span>آون توستر</span>
+<span>گریل و باربیکیو</span>
+<span>توستر</span>
+</div>
+
+<div>
+<h3>بخار شو</h3>
+<span></span>
+</div>
+
+<div>
+<h3>تصفیه آب</h3>
+<span>فیلتر تصفیه آب</span>
+</div>
+
+<div>
+<h3>لوازم توکار</h3>
+<span>فر</span>
+<span>هود</span>
+<span>گاز صفحه ای</span>
+<span>سینک ظرفشویی</span>
+</div>
+
+<div>
+<h3>خردکن و غذاساز</h3>
+<span>گوشت کوب برقی</span>
+<span>غذاساز</span>
+<span>همزن</span>
+<span>مخلوط کن</span>
+<span>چرخ گوشت</span>
+<span>خردکن</span>
+<span>آسیاب</span>
+</div>

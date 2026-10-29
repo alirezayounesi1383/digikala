@@ -320,7 +320,7 @@ section.pop {
   top: 100% !important;
   right: 0 !important;
   display: none;
-margin-top: 10px;
+  margin-top: 10px;
   box-sizing: content-box;
 }
 
@@ -352,7 +352,7 @@ section.pop > div.pop > div.title > ul {
   overflow-y: auto;
 }
 section.pop > div.pop > div.title > ul > li {
-  background-color: #aaaaac;
+  background-color: #c8c8ca;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -376,7 +376,7 @@ section.pop > div.pop > div.items {
   height: 100%;
   background-color: white;
 }
-section.pop > div.pop > div.items > * {
+section.pop > div.pop > div.items > div.options {
   display: none;
   width: 100%;
   height: 100%;
@@ -387,14 +387,14 @@ section.pop > div.pop > div.items > * {
 section.pop > div.pop > div.items > div#mobile {
   display: flex;
 }
-section.pop > div.pop > div.items > div#mobile > a {
+section.pop > div.pop > div.items > div.options > a {
   padding: 5px 10px;
   width: 100%;
   color: #1672dd;
   font-size: small;
   font-weight: 600;
 }
-section.pop > div.pop > div.items > div#mobile > div.types {
+section.pop > div.pop > div.items > div.options > div.types {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
@@ -403,21 +403,21 @@ section.pop > div.pop > div.items > div#mobile > div.types {
   width: 100%;
   overflow-y: auto;
 }
-section.pop > div.pop > div.items > div#mobile > div.types > div {
+section.pop > div.pop > div.items > div.options > div.types > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
 }
-section.pop > div.pop > div.items > div#mobile > div.types > div > *:hover {
+section.pop > div.pop > div.items > div.options > div.types > div > *:hover {
   color: crimson;
 }
-section.pop > div.pop > div.items > div#mobile > div.types > div > h3 {
+section.pop > div.pop > div.items > div.options > div.types > div > h3 {
   border-right: 2px crimson solid;
   padding-right: 5px;
 }
-section.pop > div.pop > div.items > div#mobile > div.types > div > span {
+section.pop > div.pop > div.items > div.options > div.types > div > span {
   color: #88898b;
   font-size: small;
 }
@@ -1567,7 +1567,6 @@ footer > section.app > div.app > div.txt {
   width: fit-content;
   display: flex;
   align-items: center;
-
   gap: 15px;
 }
 footer > section.app > div.app > div.txt > img {
@@ -1592,4 +1591,84 @@ footer > section.app > div.app > div.button > a#more {
   align-items: center;
   justify-content: center;
   height: auto;
+}
+/*! footer discription */
+
+footer > section.describe > div.container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 30px;
+  margin-block: 15px;
+  border-top: 1px solid #e3e3e4;
+}
+footer > section.describe > div.container > div.txt {
+  width: 70%;
+  padding-left: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 25dvh;
+}
+footer > section.describe > div.container > div.txt>div.shadow {
+  display: block;
+  background: linear-gradient(to bottom, transparent, rgb(255, 252, 252));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+footer > section.describe > div.container > div.txt>button{
+border: none;
+color: #1672dd;
+background: none;
+font-weight: 600;
+position: absolute;
+right: 3%;
+bottom: 0;
+z-index: 2;
+}
+
+#close{
+  display: none;
+position: static;
+}
+footer > section.describe > div.container > div.txt > * {
+  color: #9c9c9c;
+  word-spacing: 3px;
+  line-height: 35px;
+}
+footer > section.describe > div.container > div.txt > h2 {
+  color: #838384 !important;
+}
+footer > section.describe > div.container > div.trust {
+  width: 30%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+footer > section.describe > div.container > div.trust > a {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+}
+footer > section.describe > div.container > div.trust > a > img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+footer>div.copyright{
+  
+  padding: 30px;
+  width: 100%;
+  display: flex;
+justify-content: center;
+align-items: center;
+border-top: #9c9c9c 1px solid;
+font-size: small;
+>P{
+  color: #88898b;
+}
 }

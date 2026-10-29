@@ -1,0 +1,7 @@
+{
+  "sliders": [
+    { "id": 1, "imsge": "./images/slider/b.webp", "alt": "1" },
+    { "id": 2, "imsge": "./images/slider/a.webp", "alt": "2" },
+    { "id": 3, "imsge": "./images/slider/c.webp", "alt": "3" }
+  ]
+}
