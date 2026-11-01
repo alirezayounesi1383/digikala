@@ -99,7 +99,7 @@ header > div.header > div.upper-header > div.logoheader {
 
 header > div.header > div.upper-header > div.logoheader > a {
   line-height: 0;
-  width: 30%;
+  width: 40%;
 }
 
 header > div.header > div.upper-header > div.logoheader > a > img {
@@ -107,11 +107,11 @@ header > div.header > div.upper-header > div.logoheader > a > img {
 }
 
 header > div.header > div.upper-header > div.logoheader > div.searchbox {
-  background-color: #d8d9db;
+  background-color: #c8c8ca;
   padding: 0 10px;
   border-radius: 30px;
   width: 80%;
-  height: 30px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -138,7 +138,8 @@ header
   > button {
   background-color: transparent;
   border: none;
-  color: #7b7b7c;
+  color: #aaaaac;
+  font-size: large;
 }
 
 header
@@ -149,7 +150,7 @@ header
   > label
   > input {
   border: none;
-  background-color: #d8d9db;
+  background-color: #c8c8ca;
   width: 90%;
   height: 100%;
 }
@@ -829,15 +830,191 @@ section.box > a > img {
 }
 
 /* fast delivery */
+
 section.fastdelivery {
   margin: 0px 20px;
-  height: 60vh;
   background-color: #fcf3eb;
-
   border-radius: 10px;
-  border: 1px solid black;
+  padding-top: 20px;
+}
+section.fastdelivery > div.fast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.fastdelivery > div.fast > div.upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 97%;
+  gap: 60px;
+}
+section.fastdelivery > div.fast > div.upper > div.head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+section.fastdelivery > div.fast > div.upper > div.head > img {
+  width: 7%;
+}
+section.fastdelivery > div.fast > div.upper > div.head > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+section.fastdelivery > div.fast > div.upper > div.warning {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #feedd0;
+  padding: 15px;
+  border-radius: 10px;
+}
+section.fastdelivery > div.fast > div.upper > div.warning > p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 500;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    font-size: small;
+    border-radius: 100%;
+    background-color: orange;
+    color: white;
+    aspect-ratio: 1;
+  }
+}
+section.fastdelivery > div.fast > div.upper > div.warning > button {
+  background-color: transparent;
+  border: none;
+  color: rgb(230, 150, 2);
+  font-size: 16px;
+  cursor: pointer;
+}
+section.fastdelivery > div.fast > div.main {
+  width: 100%;
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+align-items: center;
+}
+section.fastdelivery > div.fast > div.main > div.wall {
+  width: 100%;
+  height: 100%;
+  background-color: #feedd0;
+  opacity: 60%;
+  display: block;
+  z-index: 2;
+  position: absolute;
+}
+/* fast delivey swiper */
+section.fastdelivery .swiper {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
 }
 
+section.fastdelivery .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 10px;
+   background-color: #fff;
+border-radius: 10px;
+padding: 5px;
+}
+
+section.fastdelivery .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section.fastdelivery .swiper-slide a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+section.fastdelivery div.swiper-slide a p {
+  font-size: clamp(3px, 2vw, 15px);
+  padding-inline: 3px;
+}
+
+section.fastdelivery div.swiper-slide a span {
+  align-self: flex-end;
+}
+
+section.fastdelivery div.swiper-slide a div.price {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+  text-align: start;
+  font-size: clamp(3px, 2vw, 12px);
+}
+
+section.fastdelivery div.swiper-slide a div.price span.pprice {
+  order: 2;
+  text-decoration: line-through #88898b 1px;
+  color: #88898b;
+}
+
+section.fastdelivery div.swiper-slide a div.price span.takhfif {
+  background: crimson;
+  padding: 2px 4px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+section.fastdelivery div.swiper-slide a span.nprice {
+  font-size: clamp(5px, 2vw, 15px);
+}
+
+section.fastdelivery div.more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-sizing: content-box;
+  height: auto;
+}
+
+section.fastdelivery div.more a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 0;
+  padding: 5px;
+}
+
+section.fastdelivery div.more p {
+  font-size: small;
+  color: #585858;
+}
 /* amazing 2  */
 section.amazing2 {
   display: flex;
@@ -1321,12 +1498,14 @@ section.most div.swiper-button-prev {
 /* foooter */
 footer {
   width: 100%;
-  margin: 20px auto;
+  margin-top: 20px;
+  margin: auto;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   padding-inline: 20px;
+  position: relative;
 }
 
 footer > div.acces {
@@ -1557,11 +1736,12 @@ footer > section.app {
 footer > section.app > div.app {
   width: 100%;
   background-color: #3c4b6d;
-  border-radius: 30px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 15px 20px;
+  box-sizing: border-box;
 }
 footer > section.app > div.app > div.txt {
   width: fit-content;
@@ -1584,13 +1764,21 @@ footer > section.app > div.app > div.button {
   align-items: center;
   gap: 10px;
 }
+footer > section.app > div.app > div.button > a {
+  height: 45px;
+  line-height: 0;
+}
+
 footer > section.app > div.app > div.button > a#more {
   background-color: white;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: auto;
+  margin-right: 5px;
+}
+footer > section.app > div.app > div.button > a > img {
+  height: 100%;
 }
 /*! footer discription */
 
@@ -1608,7 +1796,7 @@ footer > section.describe > div.container > div.txt {
   overflow: hidden;
   height: 25dvh;
 }
-footer > section.describe > div.container > div.txt>div.shadow {
+footer > section.describe > div.container > div.txt > div.shadow {
   display: block;
   background: linear-gradient(to bottom, transparent, rgb(255, 252, 252));
   position: absolute;
@@ -1617,20 +1805,20 @@ footer > section.describe > div.container > div.txt>div.shadow {
   width: 100%;
   height: 100px;
 }
-footer > section.describe > div.container > div.txt>button{
-border: none;
-color: #1672dd;
-background: none;
-font-weight: 600;
-position: absolute;
-right: 3%;
-bottom: 0;
-z-index: 2;
+footer > section.describe > div.container > div.txt > button {
+  border: none;
+  color: #1672dd;
+  background: none;
+  font-weight: 600;
+  position: absolute;
+  right: 3%;
+  bottom: 0;
+  z-index: 2;
 }
 
-#close{
+#close {
   display: none;
-position: static;
+  position: static;
 }
 footer > section.describe > div.container > div.txt > * {
   color: #9c9c9c;
@@ -1659,16 +1847,38 @@ footer > section.describe > div.container > div.trust > a > img {
   aspect-ratio: 1;
   object-fit: contain;
 }
-footer>div.copyright{
-  
+footer > div.copyright {
   padding: 30px;
   width: 100%;
   display: flex;
-justify-content: center;
-align-items: center;
-border-top: #9c9c9c 1px solid;
-font-size: small;
->P{
-  color: #88898b;
+  justify-content: center;
+  align-items: center;
+  border-top: #9c9c9c 1px solid;
+  font-size: small;
+  > P {
+    color: #88898b;
+  }
 }
+footer > section.sponser {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+}
+footer > section.sponser > div.box {
+  display: grid;
+  gap: 1px;
+  background-color: #9c9c9c;
+  grid-template-columns: repeat(9, 1fr);
+}
+footer > section.sponser > div.box > a {
+  display: flex;
+  padding: 30px 20px;
+  background-color: #d8d9db;
+  justify-content: center;
+  align-items: center;
+}
+footer > section.sponser > div.box > a > img {
+  object-fit: fill;
+  height: 20px;
+  width: clamp(110px, 2vw, 140px);
 }
