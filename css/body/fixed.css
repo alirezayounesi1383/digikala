@@ -1,0 +1,131 @@
+@media (min-width: 1025px) {
+  section.super {
+    position: fixed;
+    bottom: 7%;
+    right: 2%;
+    background-color: #029a49;
+    border-radius: 20px;
+    padding: 10px 10px;
+    z-index: 2;
+    height: 45px;
+  }
+
+  section.super > div > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  section.super > div > button > span {
+    color: white;
+    font-size: medium;
+    user-select: none;
+  }
+
+  section.super > div > button > span.basket {
+    font-size: x-large;
+  }
+  section.poshtiban {
+    position: fixed;
+    bottom: 7%;
+    right: 90%;
+    background-image: linear-gradient(
+      to right,
+      rgb(245, 91, 117),
+      rgb(46, 46, 248)
+    );
+    border-radius: 20px;
+    padding: 8px;
+    z-index: 2;
+    height: 45px;
+  }
+
+  section.poshtiban > div > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  section.poshtiban > div > button > span {
+    color: white;
+    user-select: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  section.super {
+    display: none;
+  }
+  section.poshtiban {
+    position: fixed;
+    bottom: 7%;
+    right: 88%;
+    background-image: linear-gradient(
+      to right,
+      rgb(245, 91, 117),
+      rgb(46, 46, 248)
+    );
+    border-radius: 20px;
+    padding: 8px;
+    z-index: 5;
+    height: 45px;
+  }
+
+  section.poshtiban > div > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  section.poshtiban > div > button > span {
+    color: white;
+    user-select: none;
+  }
+}
+
+@media (max-width: 767px) {
+  section.super {
+    display: none;
+  }
+  section.poshtiban {
+    position: fixed;
+    bottom: 7%;
+    right: 73%;
+    background-image: linear-gradient(
+      to right,
+      rgb(245, 91, 117),
+      rgb(46, 46, 248)
+    );
+    border-radius: 20px;
+    padding: 8px;
+    z-index: 5;
+    height: 45px;
+  }
+
+  section.poshtiban > div > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+
+  section.poshtiban > div > button > span {
+    color: white;
+    user-select: none;
+  }
+}

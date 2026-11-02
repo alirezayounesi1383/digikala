@@ -1,0 +1,538 @@
+/*! laptop screen*/
+@media (min-width: 1024px) {
+  /* header */
+  header.tablet {
+    display: none;
+  }
+  header > div.header > div.header-ads {
+    margin-top: 2px;
+  }
+
+  header {
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: #00000044 1px solid;
+    box-sizing: content-box;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  header > div.header > div.header-ads > a {
+    line-height: 0;
+  }
+
+  header > div.header > div.header-ads > a > img {
+    width: 100%;
+    height: 60px;
+  }
+
+  header > div.header {
+    width: 100%;
+    height: fit-content;
+  }
+
+  header > div.header > div.upper-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block: 20px;
+  }
+
+  header > div.header > div.upper-header > div.logoheader {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    margin-right: 10px;
+  }
+
+  header > div.header > div.upper-header > div.logoheader > a {
+    line-height: 0;
+    width: 40%;
+  }
+
+  header > div.header > div.upper-header > div.logoheader > a > img {
+    width: 100%;
+  }
+
+  header > div.header > div.upper-header > div.logoheader > div.searchbox {
+    background-color: #c8c8ca;
+    padding: 0 10px;
+    border-radius: 30px;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header
+    > div.header
+    > div.upper-header
+    > div.logoheader
+    > div.searchbox
+    > label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  header
+    > div.header
+    > div.upper-header
+    > div.logoheader
+    > div.searchbox
+    > label
+    > button {
+    background-color: transparent;
+    border: none;
+    color: #aaaaac;
+    font-size: large;
+  }
+
+  header
+    > div.header
+    > div.upper-header
+    > div.logoheader
+    > div.searchbox
+    > label
+    > input {
+    border: none;
+    background-color: #c8c8ca;
+    width: 90%;
+    height: 100%;
+  }
+
+  header
+    > div.header
+    > div.upper-header
+    > div.logoheader
+    > div.searchbox
+    > label
+    > input:focus {
+    outline: none;
+  }
+
+  header > div.header > div.upper-header > div.botton-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+  }
+
+  header > div.header > div.upper-header > div.botton-header > a.bell {
+    font-size: 20px;
+  }
+
+  header > div.header > div.upper-header > div.botton-header > a.login {
+    border: solid rgba(0, 0, 0, 0.247) 1px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    gap: 5px;
+    padding: 5px 10px;
+  }
+
+  header > div.header > div.upper-header > div.botton-header > a.cart {
+    border-right: rgba(0, 0, 0, 0.247) 1px solid;
+    padding-inline: 15px;
+  }
+
+  /* navbar */
+  header > div.header > div.navbar {
+    width: 100%;
+  }
+
+  header > div.header > div.navbar > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+    flex-wrap: wrap;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems {
+    display: flex;
+    align-items: center;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-inline: 5px;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems > span.menu {
+    gap: 5px;
+    position: relative !important;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems > a.navside {
+    color: #5f5e5e;
+    font-size: 14px;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-inline: 1px solid #989a9e;
+    gap: 15px;
+    padding-inline: 10px;
+    margin-inline: 5px;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems > ul > li > a {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5f5e5e;
+  }
+
+  header > div.header > div.navbar > nav > div.navitems > ul > li > a > span {
+    color: #5f5e5e;
+  }
+
+  header > div.header > div.navbar > nav > div.addressbotton {
+    background-color: rgba(255, 92, 33, 0.274);
+    border-radius: 30px;
+    padding: 5px 10px;
+    margin-inline: 10px;
+  }
+
+  header > div.header > div.navbar > nav > div.addressbotton > a {
+    color: #f55c25;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  header > div.header > div.navbar > nav > div.addressbotton > a > span {
+    color: #f55c25;
+  }
+  header > div.header > div.navbar > nav a {
+    position: relative;
+  }
+  .border::before {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: red;
+    margin: auto;
+    width: 0;
+    height: 1.5px;
+    top: 120%;
+    left: 0;
+
+    transition: all linear 0.2s;
+  }
+  .border:hover::before {
+    width: 98%;
+  }
+}
+
+/*! tablet screen */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  header.tablet {
+    display: block;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #efefef;
+    padding: 5px 15px 10px 15px;
+  }
+  header.laptop {
+    display: none;
+  }
+
+  /* *header slider */
+  section.headslide {
+    width: 100%;
+
+    background-color: transparent;
+    margin-bottom: 10px;
+  }
+  section.headslide > div.sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-block: 5px;
+    background-color: transparent;
+  }
+  section.headslide > div.sections > a.more {
+    border: 1px solid #e1e1e1;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.headslide .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  section.headslide div.swiper-wrapper {
+    align-items: center;
+  }
+  section.headslide .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  section.headslide .swiper-slide a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-block: 5px;
+  }
+  section.headslide .swiper-slide a p {
+    font-size: clamp(8px, 2vw, 11px);
+    font-weight: 500;
+  }
+  section.headslide .swiper-slide a img {
+    display: block;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+  }
+
+  /* *header search bar */
+  section.search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section.search > a {
+    color: brown;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-size: small;
+    > span {
+      color: brown;
+      font-size: small;
+    }
+  }
+  section.search > div.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section.search > div.main > a {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 5px;
+    border: solid 1px #c8c8ca;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    font-size: large;
+    width: 5%;
+  }
+  section.search > div.main > div.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 93.5%;
+    background-color: white;
+    border: solid 1px #e1e1e1;
+    padding: 11px 10px;
+    border-radius: 30px;
+  }
+  section.search > div.main > div.searchbox > div.text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  section.search > div.main > div.searchbox > span.cam {
+    background: linear-gradient(114deg, #a855f7 0%, #6366f1 50%, #38bdf8 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  section.search > div.main > div.searchbox > div.text > span.searchicon {
+    color: #aaaaac;
+  }
+  section.search > div.main > div.searchbox > div.text > span.ms {
+    color: #aaaaac;
+    font-family: ir-y-bold;
+  }
+  section.search > div.main > div.searchbox > div.text > img {
+    width: 19%;
+  }
+}
+@media (max-width: 767px) {
+  header.tablet {
+    display: block;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #efefef;
+    padding: 5px 15px 10px 15px;
+  }
+  header.laptop {
+    display: none;
+  }
+
+  /* *header slider */
+  section.headslide {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: transparent;
+  }
+  section.headslide > div.sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: transparent;
+  }
+  section.headslide > div.sections > a.more {
+    border: 1px solid #e1e1e1;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #fff;
+
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section.headslide .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  section.headslide div.swiper-wrapper {
+    align-items: center;
+  }
+  section.headslide .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  section.headslide .swiper-slide a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-block: 5px;
+  }
+  section.headslide .swiper-slide a p {
+    font-size: clamp(8px, 2vw, 11px);
+    font-weight: 500;
+  }
+  section.headslide .swiper-slide a img {
+    display: block;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+  }
+
+  /* *header search bar */
+  section.search {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  section.search > a {
+    color: brown;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    font-size: small;
+    > span {
+      color: brown;
+      font-size: small;
+    }
+  }
+  section.search > div.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section.search > div.main > a {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 5px;
+    border: solid 1px #c8c8ca;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    font-size: large;
+    width: 10%;
+  }
+  section.search > div.main > div.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 87.5%;
+    background-color: white;
+    border: solid 1px #e1e1e1;
+    padding: 11px 10px;
+    border-radius: 30px;
+  }
+  section.search > div.main > div.searchbox > div.text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  section.search > div.main > div.searchbox > span.cam {
+    background: linear-gradient(114deg, #a855f7 0%, #6366f1 50%, #38bdf8 100%);
+    background-clip: text;
+    color: transparent;
+  }
+  section.search > div.main > div.searchbox > div.text > span.searchicon {
+    color: #aaaaac;
+  }
+  section.search > div.main > div.searchbox > div.text > span.ms {
+    color: #aaaaac;
+    font-family: ir-y-bold;
+  }
+  section.search > div.main > div.searchbox > div.text > img {
+    width: 19%;
+  }
+}
