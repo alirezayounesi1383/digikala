@@ -473,7 +473,7 @@ section.taste div.swiper-slide a div.price div.sup span.pprice {
 
 section.taste div.swiper-slide a div.price span.nprice {
   text-align: end;
-  font-size: clamp(5px, 2.5vw, 18px);
+  font-size: clamp(3px, 2vw, 12px);
 }
 
 section.taste div.more {
@@ -612,7 +612,6 @@ footer > section.describe > div.container {
   border-top: 1px solid #e3e3e4;
 }
 footer > section.describe > div.container > div.txt {
- 
   padding-left: 10px;
   position: relative;
   overflow: hidden;
@@ -649,10 +648,10 @@ footer > section.describe > div.container > div.txt > * {
 }
 footer > section.describe > div.container > div.txt > h3 {
   color: #838384 !important;
-  font-size: clamp(12px , 2vw , 18px);
+  font-size: clamp(12px, 2vw, 18px);
 }
-footer > section.describe > div.container > div.txt>p{
-  font-size: clamp(9px , 2vw , 15px);
+footer > section.describe > div.container > div.txt > p {
+  font-size: clamp(9px, 2vw, 15px);
 }
 footer > section.describe > div.container > div.trust {
   width: 40%;
@@ -672,5 +671,3 @@ footer > section.describe > div.container > div.trust > a > img {
   aspect-ratio: 1;
   object-fit: contain;
 }
-
-
