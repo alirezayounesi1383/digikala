@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body style="position: relative; height: 100%">
+  <body>
     <div class="back"></div>
 
     <header class="laptop">
@@ -3127,7 +3127,39 @@
         </a>
       </section>
     </header>
-
+    <section class="navbar">
+      <div class="nav">
+        <nav>
+          <ul class="navitems">
+            <li>
+              <button>
+                <span class="far fa-home icon"></span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="fas fa-th-large icon"></span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="fas fa-shopping-cart icon"></span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="far fa-comment icon"></span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <span class="far fa-user icon"></span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
     <main>
       <!------------------------------------------------- fixed contents -->
       <section class="super" id="top">
@@ -3141,7 +3173,7 @@
       <section class="poshtiban">
         <div>
           <button>
-            <span> پشتیبانی</span>
+            <span id="tb-none"> پشتیبانی</span>
             <svg
               xmlns:xlink="http://www.w3.org/1999/xlink"
               xmlns="http://www.w3.org/2000/svg"
@@ -3358,95 +3390,111 @@
       </section>
       <!-- recommands -->
       <section class="recommand">
-        <div>
-          <a href="#"
-            ><img src="./images/recommends/super-market-fory.webp" alt="1"
-          /></a>
-          <span>سوپر مارکت فوری</span>
-        </div>
-        <div>
-          <a href="#"
-            ><img src="./images/recommends/talavanoghredigital.webp" alt="2"
-          /></a>
-          <span>طلا و نقره دیجیتال</span>
-        </div>
-        <div>
-          <a href="#"
-            ><img src="./images/recommends/befarmaiid-jaam.webp" alt="3"
-          /></a>
-          <span>بفرمایید جام</span>
-        </div>
-        <div>
-          <a href="#"
-            ><img src="./images/recommends/roidad-hozory.webp" alt="4"
-          /></a>
-          <span>رویداد حضوری</span>
-        </div>
-        <div>
-          <a href="#"
-            ><img src="./images/recommends/safar-tabestooni.webp" alt="5"
-          /></a>
-          <span>سفر تابستونی</span>
-        </div>
-        <div>
-          <a href="#"
-            ><img src="./images/recommends/tala-zir-ojrat.webp" alt="6"
-          /></a>
-          <span>طلا زیر 10% اجرت</span>
-        </div>
-        <div>
-          <a href="#"><img src="./images/recommends/tv.webp" alt="7" /></a>
-          <span>تلویزیون</span>
-        </div>
-        <div>
-          <a href="#"
-            ><img
-              src="./images/recommends/yek-m-takhfif-bishtar.webp"
-              alt="8" /></a
-          ><span>یکم تخفیف بیشتر</span>
-        </div>
-        <div>
-          <a href="#"
-            ><img
-              src="./images/recommends/vam-banki-etebar-kharid.webp"
-              alt="9"
-          /></a>
-          <span>وام بانکی ، اعتبار خرید</span>
-        </div>
-        <div class="more">
-          <a href="#">
-            <svg
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns="http://www.w3.org/2000/svg"
-              style="width: 32px; height: 32px; fill: white"
-              width="32"
-              height="32"
-            >
-              <defs>
-                <symbol
-                  id="moreHoriz"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16 12c0 1.1.9 2 2 2s2-.9 2-2-.9-2-2-2-2 .9-2 2zm-4-2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-8 2c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2z"
-                    clip-rule="evenodd"
-                  ></path>
-                </symbol>
-              </defs>
-              <use xlink:href="#moreHoriz"></use>
-            </svg>
-          </a>
-          <span>بیشتر</span>
+        <div class="swiper mySwiperrec">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img
+                    src="./images/recommends/super-market-fory.webp"
+                    alt="1"
+                /></a>
+                <span>سوپر مارکت فوری</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img
+                    src="./images/recommends/talavanoghredigital.webp"
+                    alt="2"
+                /></a>
+                <span>طلا و نقره دیجیتال</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img src="./images/recommends/befarmaiid-jaam.webp" alt="3"
+                /></a>
+                <span>بفرمایید جام</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img src="./images/recommends/roidad-hozory.webp" alt="4"
+                /></a>
+                <span>رویداد حضوری</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img src="./images/recommends/safar-tabestooni.webp" alt="5"
+                /></a>
+                <span>سفر تابستونی</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img src="./images/recommends/tala-zir-ojrat.webp" alt="6"
+                /></a>
+                <span>طلا زیر 10% اجرت</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img src="./images/recommends/tv.webp" alt="7"
+                /></a>
+                <span>تلویزیون</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img
+                    src="./images/recommends/yek-m-takhfif-bishtar.webp"
+                    alt="8" /></a
+                ><span>یکم تخفیف بیشتر</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#"
+                  ><img
+                    src="./images/recommends/vam-banki-etebar-kharid.webp"
+                    alt="9"
+                /></a>
+                <span>وام بانکی ، اعتبار خرید</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="more">
+                <a href="#">
+                  <span class="fas fa-ellipsis-h"></span>
+                </a>
+                <span>بیشتر</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- amazing offers -->
       <section class="amazing">
         <div class="amazing">
-          <img src="./images/shegeft-angiz/Amazings.svg" alt="a" />
-          <div class="clock"><p>clock</p></div>
-          <img src="./images/shegeft-angiz/logo.svg" alt="basket" />
+          <div class="logo">
+            <img
+              src="./images/shegeft-angiz/Amazings.svg"
+              alt="a"
+              id="amazing"
+            />
+            <div class="clock"><p>clock</p></div>
+            <img src="./images/shegeft-angiz/logo.svg" alt="basket" id="off" />
+          </div>
+          <a href="#" class="all">همه ></a>
         </div>
         <div class="swiper mySwipers">
           <div class="swiper-wrapper">
@@ -4520,32 +4568,14 @@
       <!-- amazing2 offers -->
       <section class="amazing2">
         <div class="amazing2">
-          <img src="./images/svg/شگفت انگیز.svg" alt="amazing" />
-          <div class="clock"><p>clock</p></div>
+          <div class="rt-logo">
+            <img src="./images/svg/شگفت انگیز.svg" alt="amazing" />
+            <div class="clock"><p>clock</p></div>
+          </div>
+
           <button>
             مشاهده همه
-            <svg
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xmlns="http://www.w3.org/2000/svg"
-              style="width: 20px; height: 20px; fill: var(--color-fresh-700)"
-              width="24"
-              height="24"
-            >
-              <defs>
-                <symbol
-                  id="arrowLeft"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.293 19.707l1.414-1.414L7.414 13H20v-2H7.414l5.293-5.293-1.414-1.414-7 7a1 1 0 000 1.414l7 7z"
-                    clip-rule="evenodd"
-                  ></path>
-                </symbol>
-              </defs>
-              <use xlink:href="#arrowLeft"></use>
-            </svg>
+            <span class="fas fa-long-arrow-alt-left"></span>
           </button>
         </div>
         <div class="swiper mySwipersa">
@@ -5998,6 +6028,40 @@
             </svg>
           </a>
         </div>
+        <div class="cellphone">
+          <div class="rt">
+            <span>
+              <svg
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1024 1024"
+                fill="none"
+                width="30"
+                height="30"
+                focusable="false"
+              >
+                <path
+                  d="M812.122 459.942v-28.881c0-74.719-29.683-146.378-82.517-199.212s-124.493-82.516-199.211-82.516c-74.718 0-146.376 29.681-199.21 82.516s-82.517 124.493-82.517 199.212v29.35c2.874-0.448 5.773-0.759 8.69-0.93 14.087-0.815 28.169 1.707 41.096 7.364 13.129 5.559 24.762 14.135 33.955 25.033s15.686 23.808 18.952 37.687l38.784 162.133c3.341 13.79 3.411 28.173 0.203 41.997s-9.603 26.705-18.677 37.619c-8.398 10.236-18.978 18.47-30.966 24.098-11.988 5.623-25.083 8.499-38.326 8.414h-3.924c-38.545-1.647-75.512-15.77-105.338-40.239s-50.896-57.967-60.041-95.45c-9.144-37.478-5.867-76.915 9.339-112.371 9.814-22.886 24.253-43.315 42.254-60.087v-64.619c0-91.693 36.425-179.63 101.262-244.466s152.77-101.262 244.465-101.262c91.691 0 179.631 36.425 244.467 101.262s101.261 152.774 101.261 244.466v63.889c18.675 17.314 33.532 38.537 43.409 62.345 15.049 36.267 17.69 76.493 7.509 114.411-8.358 31.996-25.557 60.992-49.63 83.669-24.068 22.673-54.037 38.11-86.477 44.544-7.091 1.417-14.259 2.406-21.466 2.97-60.241 102.716-125.696 114.607-194.603 114.607-10.227 0-20.544-0.252-30.942-0.508l-4.578-0.111c-9.361-0.235-19.58-0.491-29.845-0.491-8.491 0-16.627-3.371-22.626-9.374-6.003-5.999-9.374-14.14-9.374-22.626s3.371-16.627 9.374-22.63c5.999-5.999 14.135-9.37 22.626-9.37 12.288 0 24.149 0.299 35.627 0.597 71.023 1.899 113.724 2.953 159.765-67.183-5.7-4.301-10.88-9.284-15.42-14.852-9.062-10.914-15.445-23.804-18.637-37.628s-3.106-28.203 0.247-41.988l38.699-162.133c3.277-13.897 9.783-26.825 18.991-37.734 9.203-10.914 20.855-19.503 34.001-25.071 12.937-5.641 27.021-8.149 41.105-7.322 2.765 0.162 5.517 0.452 8.243 0.87zM758.903 739.989l0.363-0.004 0.521-0.013c6.234-0.269 12.442-1.011 18.56-2.219 20.544-4.233 39.509-14.080 54.788-28.454s26.266-32.704 31.74-52.954c6.601-24.427 4.954-50.351-4.681-73.749-9.634-23.394-26.722-42.961-48.61-55.659-3.904-2.364-8.363-3.661-12.928-3.755-3.669 0.047-7.292 0.819-10.667 2.261-3.955 1.668-7.458 4.245-10.231 7.522s-4.736 7.159-5.726 11.337l-38.699 162.133c-1.011 4.169-1.033 8.512-0.073 12.689 0.964 4.177 2.889 8.073 5.619 11.375 2.509 3.098 5.705 5.568 9.331 7.211 1.058 0.478 2.142 0.883 3.251 1.216 0.7 0.017 1.399 0.055 2.099 0.119 1.809 0.162 3.597 0.482 5.342 0.943zM249.385 526.793c-21.888 12.698-38.974 32.26-48.609 55.659s-11.281 49.318-4.681 73.749c5.471 20.237 16.453 38.562 31.723 52.928s34.228 24.209 54.763 28.437c6.133 1.233 12.353 1.988 18.603 2.261 3.969 0.068 7.904-0.742 11.521-2.381s6.822-4.062 9.385-7.091c2.736-3.294 4.666-7.181 5.637-11.349 0.97-4.173 0.954-8.508-0.047-12.672l-38.784-162.133c-0.975-4.169-2.921-8.043-5.679-11.311-2.758-3.273-6.252-5.841-10.193-7.505-3.774-1.638-7.88-2.364-11.987-2.121s-8.099 1.455-11.651 3.529z"
+                  fill="black"
+                ></path></svg
+            ></span>
+            <div class="txt">
+              <p>تماس با پشتیبانی</p>
+              <span>۷ روز هفته، ۲۴ ساعت</span>
+            </div>
+          </div>
+          <button>تماس</button>
+        </div>
+        <div class="app-logo">
+          <div class="rt">
+            <img src="./images/footer-logo/Logo.webp" alt="digi" />
+            <div class="txt">
+              <p>اپلیکیشن دیجی‌کالا</p>
+              <span>تجربه خرید بهتر در</span>
+            </div>
+          </div>
+          <button>دانلود</button>
+        </div>
         <div class="callinfo">
           <span>تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ </span>
           <span class="mid"> ۰۲۱-۹۱۰۰۰۱۰۰ </span>
@@ -6029,26 +6093,44 @@
       <section class="ease">
         <div class="ease">
           <div class="with">
-            <h2>با دیجی‌کالا</h2>
-            <a href="#">اتاق خبر دیجی کالا</a>
-            <a href="#">فروش در دیجیکالا</a>
-            <a href="#">فرصت های شغلی</a>
-            <a href="#">گزارش تخلف در دیجیکالا</a>
-            <a href="#">تماس با دیجیکالا</a>
-            <a href="#">درباره دیجیکالا</a>
+            <h2>
+              با دیجی‌کالا
+
+              <span class="fas fa-angle-down"></span>
+            </h2>
+            <div class="as">
+              <a href="#">اتاق خبر دیجی کالا</a>
+              <a href="#">فروش در دیجیکالا</a>
+              <a href="#">فرصت های شغلی</a>
+              <a href="#">گزارش تخلف در دیجیکالا</a>
+              <a href="#">تماس با دیجیکالا</a>
+              <a href="#">درباره دیجیکالا</a>
+            </div>
           </div>
           <div class="costumer">
-            <h2>خدمات مشتریان</h2>
-            <a href="#"> پاسخ به پرسش های متداول </a>
-            <a href="#"> رویه های بازگرداندن کالا </a>
-            <a href="#"> شرایط استفاده </a>
-            <a href="#"> حریم خصوصی </a>
-            <a href="#"> گذارش باگ </a>
+            <h2>
+              خدمات مشتریان
+
+              <span class="fas fa-angle-down"></span>
+            </h2>
+            <div class="as">
+              <a href="#"> پاسخ به پرسش های متداول </a>
+              <a href="#"> رویه های بازگرداندن کالا </a>
+              <a href="#"> شرایط استفاده </a>
+              <a href="#"> حریم خصوصی </a>
+              <a href="#"> گذارش باگ </a>
+            </div>
           </div>
           <div class="guide">
-            <h2>راهنمای خرید از دیجی‌کالا</h2>
-            <a href="#"> نحوه ثبت سفارش </a><a href="#"> رویه ارسال سفارش </a
-            ><a href="#">شیوه پرداخت</a>
+            <h2>
+              راهنمای خرید از دیجی‌کالا
+
+              <span class="fas fa-angle-down"></span>
+            </h2>
+            <div class="as">
+              <a href="#"> نحوه ثبت سفارش </a><a href="#"> رویه ارسال سفارش </a
+              ><a href="#">شیوه پرداخت</a>
+            </div>
           </div>
           <div class="comunication">
             <div class="social">
@@ -6105,7 +6187,7 @@
       <section class="describe">
         <div class="container">
           <div class="txt">
-            <h2>دیجی کالا؛ بزرگترین فروشگاه اینترنتی ایران</h2>
+            <h3>دیجی کالا؛ بزرگترین فروشگاه اینترنتی ایران</h3>
             <p>
               دیجی کالا سال‌ها است که به انتخاب اول بسیاری از خریداران اینترنتی
               تبدیل شده است. دیجی کالا به عنوان بزرگ‌ترین و معتبرترین فروشگاه
@@ -6355,6 +6437,11 @@
         </p>
       </div>
       <section class="sponser">
+        <h2>
+          شرکای تجاری
+
+          <span class="fas fa-angle-down"></span>
+        </h2>
         <div class="box">
           <a href="#">
             <img src="./images/footer-brands/a.svg" alt="" />
@@ -6495,15 +6582,15 @@
             spaceBetween: 5,
           },
           768: {
-            slidesPerView: 5,
-            spaceBetween: 8,
+            slidesPerView: 7,
+            spaceBetween: 5,
           },
           576: {
-            slidesPerView: 5,
-            spaceBetween: 1,
+            slidesPerView: 3.3,
+            spaceBetween: 2,
           },
           200: {
-            slidesPerView: 5,
+            slidesPerView: 3.3,
             spaceBetween: 1,
           },
         },
@@ -6525,15 +6612,12 @@
             spaceBetween: 5,
           },
           768: {
-            slidesPerView: 5,
-            spaceBetween: 8,
+            slidesPerView: 7.2,
+            spaceBetween: 3,
           },
-          576: {
-            slidesPerView: 5,
-            spaceBetween: 1,
-          },
+
           200: {
-            slidesPerView: 5,
+            slidesPerView: 3.2,
             spaceBetween: 1,
           },
         },
@@ -6549,8 +6633,19 @@
       // daste bandi
       var swiper = new Swiper(".mySwiperss", {
         slidesPerView: 9,
-        spaceBetween: 35,
+        spaceBetween: 20,
         freeMode: true,
+        breakpoints: {
+          768: {
+            slidesPerView: 9,
+            spaceBetween: 20,
+          },
+
+          200: {
+            slidesPerView: 4.3,
+            spaceBetween: 10,
+          },
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -6607,14 +6702,14 @@
           },
           768: {
             slidesPerView: 9.5,
-            spaceBetween: 8,
+            spaceBetween: 5,
           },
           576: {
-            slidesPerView: 7.5,
-            spaceBetween: 8,
+            slidesPerView: 4,
+            spaceBetween: 5,
           },
           200: {
-            slidesPerView: 5,
+            slidesPerView: 4,
             spaceBetween: 5,
           },
         },
@@ -6631,6 +6726,21 @@
         slidesPerView: 4.1,
         spaceBetween: 30,
         freeMode: true,
+        breakpoints: {
+          1024: {
+            slidesPerView: 4.1,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 1.7,
+            spaceBetween: 30,
+          },
+
+          200: {
+            slidesPerView: 1.5,
+            spaceBetween: 10,
+          },
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -6652,8 +6762,34 @@
             spaceBetween: 7,
           },
           200: {
-            slidesPerView: 5,
+            slidesPerView: 3,
             spaceBetween: 7,
+          },
+        },
+        freeMode: true,
+      });
+    </script>
+    <!-- reccomand -->
+    <script>
+      var swiper = new Swiper(".mySwiperrec", {
+        slidesPerView: 10,
+        spaceBetween: 50,
+        breakpoints: {
+          1025: {
+            slidesPerView: 10,
+            spaceBetween: 50,
+          },
+          992: {
+            slidesPerView: 10,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 10,
+            spaceBetween: 30,
+          },
+          200: {
+            slidesPerView: 6,
+            spaceBetween: 20,
           },
         },
         freeMode: true,

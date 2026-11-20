@@ -1,6 +1,7 @@
-import { menu } from "./popup.js";
-import {txt} from "./description.js";
+import { menu } from "./header.js";
+import { txt, open } from "./footer.js";
 import { fastdelivery } from "./fastdelivery.js";
-txt()
+txt();
 menu();
-fastdelivery()
+fastdelivery();
+open();

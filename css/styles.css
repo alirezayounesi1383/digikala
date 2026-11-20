@@ -52,12 +52,18 @@
   }
 }
 html {
-  margin: auto;
   width: 100%;
-  background-color: white;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 body {
   width: 100%;
+  max-width: 100%;
+
+  position: relative;
+  background-color: #fff;
+  height: auto;
 }
 main {
   margin: auto;
@@ -75,314 +81,90 @@ div.back {
 }
 
 /* RECOMMANDS */
+
 section.recommand {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 100%;
+  width: 95%;
   margin-block: 30px;
+  margin-inline: auto;
 }
-
-section.recommand > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 4%;
-  flex-direction: column;
+section.recommand .swiper-wrapper {
+  align-items: flex-start;
 }
-
-section.recommand > div > span {
-  text-align: center;
-  font-size: small;
-}
-
-section.recommand > div > a > img {
-  width: 100%;
-}
-
-section.recommand > div.more {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  aspect-ratio: 1;
-}
-
-section.recommand > div.more > a {
+section.recommand .swiper {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  display: flex;
-  background-color: #7b7b7c;
-  justify-content: center;
-  align-items: center;
-
-  text-align: center;
 }
-
-/* --------------------amazings swipwer---------------- */
-section.amazing {
-  background-color: #ed1945;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-inline: 10px;
-  padding-inline: 20px;
-}
-
-section.amazing div.amazing {
-  width: 18%;
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-section.amazing .swiper {
-  border-radius: 10px;
-  width: 100%;
-  height: 90% !important;
-}
-
-section.amazing .swiper-wrapper {
-  height: 100% !important;
-}
-
-section.amazing .swiper-slide {
+section.recommand .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-section.amazing .swiper-button-next {
-  background-color: #a9a9aa;
-  border-radius: 50%;
-  text-align: center;
-  padding: 10px;
-  position: absolute;
-  width: clamp(30px, 3vw, 50px);
-  height: clamp(30px, 3vw, 50px);
-}
-
-section.amazing .swiper-button-prev {
-  background-color: #a9a9aa;
-  border-radius: 50%;
-  padding: 10px;
-  position: absolute;
-  width: clamp(30px, 3vw, 50px);
-  height: clamp(30px, 3vw, 50px);
-}
-
-section.amazing div.more {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: auto;
-  box-sizing: border-box;
 }
-
-section.amazing div.more a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-}
-
-section.amazing div.more svg {
-  aspect-ratio: 1;
-  border: 3px solid #1672dd;
-  text-align: center;
-  border-radius: 50%;
-  size: 10%;
-  padding: 5px;
-}
-
-section.amazing div.more p {
-  font-size: small;
-}
-
-section.amazing > div.swiper > div.swiper-wrapper > .swiper-slide > a {
-  width: 100%;
-  height: 100%;
-}
-
-section.amazing .swiper-slide a img {
+section.recommand .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
-section.amazing .swiper-slide a div.price {
+section.recommand .swiper-slide div {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 15px;
-  width: 100%;
-  padding-inline: 3px;
-}
-
-section.amazing .swiper-slide a span {
-  font-family: cubic;
-  font-size: medium;
-}
-
-section.amazing div.swiper-slide a p {
-  display: flex;
-  width: fit-content;
   align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  color: #585858;
-}
-
-section.amazing div.swiper-slide a span.takhfif {
-  background-color: crimson;
-  border-radius: 20px;
-  padding: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: fit-content;
-  color: white;
-  font-weight: bold;
-}
-
-section.amazing div.swiper-slide a span.pprice {
-  color: #585858;
-  text-decoration: solid #585858 line-through;
-  display: block;
-  width: 100%;
-  text-align: end;
-  padding-inline: 20%;
-  margin-block: 5px;
-}
-
-span.nprice {
-  display: flex;
-  gap: 2px;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-/* box under the amazing 1 part */
-section.box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 98%;
-  gap: 5%;
-  flex-wrap: nowrap;
-  margin: 20px auto;
-  gap: 20px;
-}
-section.box > a {
-  flex: 1;
-}
-section.box > a > img {
-  border-radius: 30px;
-  width: 100%;
-}
-
-/* fast delivery */
-
-section.fastdelivery {
-  margin: 0px 20px;
-  background-color: #fcf3eb;
-  border-radius: 10px;
-  padding-top: 20px;
-}
-section.fastdelivery > div.fast {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-section.fastdelivery > div.fast > div.upper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 97%;
-  gap: 60px;
-}
-section.fastdelivery > div.fast > div.upper > div.head {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   gap: 10px;
-  width: 100%;
+  flex-direction: column;
 }
-section.fastdelivery > div.fast > div.upper > div.head > img {
-  width: 7%;
-}
-section.fastdelivery > div.fast > div.upper > div.head > span {
-  font-size: 20px;
-  font-weight: 700;
-}
-section.fastdelivery > div.fast > div.upper > div.warning {
-  width: 97%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #feedd0;
-  padding: 15px;
-  border-radius: 10px;
-}
-section.fastdelivery > div.fast > div.upper > div.warning > p {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 16px;
-  font-weight: 500;
 
-  span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    font-size: small;
-    border-radius: 100%;
-    background-color: orange;
-    color: white;
-    aspect-ratio: 1;
-  }
+section.recommand .swiper-slide div span {
+  text-align: center;
+  font-size: clamp(6px, 2vw, 12px);
 }
-section.fastdelivery > div.fast > div.upper > div.warning > button {
-  background-color: transparent;
-  border: none;
-  color: rgb(230, 150, 2);
-  font-size: 16px;
-  cursor: pointer;
-}
-section.fastdelivery > div.fast > div.main {
-  width: 100%;
-  position: relative;
-  padding-top: 20px;
+section.recommand .swiper-slide div a {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
-section.fastdelivery > div.fast > div.main > div.wall {
+section.recommand .swiper-slide div a img {
+  width: 52px;
+  height: 52px;
+}
+
+section.recommand .swiper-slide div.more {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
   height: 100%;
-  background-color: #feedd0;
-  opacity: 60%;
-  display: block;
-  z-index: 2;
-  position: absolute;
 }
+
+section.recommand .swiper-slide div.more a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section.recommand .swiper-slide div.more a span {
+  font-size: 20px;
+  color: white;
+  background-color: #cccccc;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 52px;
+  height: 52px;
+  font-size: clamp(20px, 2vw, 50px);
+}
+
 /* fast delivey swiper */
 section.fastdelivery .swiper {
   width: 100%;
@@ -481,138 +263,6 @@ section.fastdelivery div.more p {
   font-size: small;
   color: #585858;
 }
-/* amazing 2  */
-section.amazing2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: #71bb2c;
-  border-radius: 30px;
-
-  margin: 20px 10px;
-  padding: 20px;
-}
-
-section.amazing2 div.amazing2 {
-  width: 18%;
-  padding: 20px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  height: 100%;
-  gap: 20px;
-}
-
-section.amazing2 div.amazing2 button {
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 5px;
-  border: none;
-  transition: all linear 0.5s;
-}
-
-section.amazing2 div.amazing2 button:hover {
-  background-color: #efeff0;
-}
-
-section.amazing2 .swiper {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-section.amazing2 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-section.amazing2 .swiper-slide a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-section.amazing2 .swiper-slide a img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-section.amazing2 div.swiper-slide a p {
-  font-size: clamp(3px, 2vw, 15px);
-  padding-inline: 3px;
-}
-
-section.amazing2 div.swiper-slide a span {
-  align-self: flex-end;
-}
-
-section.amazing2 div.swiper-slide a div.price {
-  display: flex;
-  justify-content: end;
-  gap: 5px;
-  text-align: start;
-  font-size: clamp(3px, 2vw, 12px);
-}
-
-section.amazing2 div.swiper-slide a div.price span.pprice {
-  order: 2;
-  text-decoration: line-through #88898b 1px;
-  color: #88898b;
-}
-
-section.amazing2 div.swiper-slide a div.price span.takhfif {
-  background: crimson;
-  padding: 2px 4px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-}
-
-section.amazing2 div.swiper-slide a span.nprice {
-  font-size: clamp(5px, 2vw, 15px);
-}
-
-section.amazing2 div.more {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  box-sizing: content-box;
-  height: auto;
-}
-
-section.amazing2 div.more a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  gap: 10px;
-  text-align: center;
-  border-radius: 50%;
-  line-height: 0;
-  padding: 5px;
-}
-
-section.amazing2 div.more p {
-  font-size: small;
-  color: #585858;
-}
 
 /********************** daste bandi */
 section.category {
@@ -649,29 +299,9 @@ section.category .swiper-slide img {
 }
 
 section.category .swiper-slide span {
-  font-size: small;
+  font-size: clamp(8px, 2vw, 12px);
   height: 36px;
   display: block;
-}
-
-/*********** under daste bandi *******************/
-section.undercategory {
-  display: flex;
-  width: 98%;
-  margin: 20px auto;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-section.undercategory a {
-  line-height: none;
-  flex-grow: 1;
-}
-
-section.undercategory a img {
-  width: 100%;
-  border-radius: 30px;
 }
 
 /* fav brands section */
@@ -743,12 +373,12 @@ section.brands div.swiper-button-prev {
 section.taste {
   width: 98%;
   margin: 20px auto;
-  border: 1px solid #a9a9aa;
+
   border-radius: 20px;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 section.taste div.title {
@@ -784,7 +414,7 @@ section.taste .swiper {
 section.taste .swiper-slide {
   text-align: center;
   font-size: 18px;
-  border: 1px solid #88898b;
+  border: 1px solid #cccccc;
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -886,7 +516,6 @@ section.taste div.swiper-button-prev {
 
 /* most sales section */
 section.most {
-  border: 1px solid #a9a9aa;
   padding: 20px;
   width: 98%;
   margin: 10px auto;
@@ -915,7 +544,7 @@ section.most .swiper-slide {
 section.most .swiper-slide div.item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 5px;
   font-size: clamp(6px, 4vw, 12px);
 }
@@ -946,7 +575,6 @@ section.most .swiper-slide div.item p span {
 section.most .swiper-slide img {
   display: block;
   width: 25%;
-
   object-fit: cover;
 }
 
@@ -974,278 +602,6 @@ footer {
   position: relative;
 }
 
-footer > div.acces {
-  width: 100%;
-}
-
-footer > div.acces > div.top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 30px;
-}
-footer > div.acces > div.top > img {
-  width: 16%;
-}
-footer > div.acces > div.top > a {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  font-size: clamp(8px, 3vw, 13px);
-  color: #88898b;
-  border: #88898b solid 1px;
-  border-radius: 10px;
-  padding: 6px 10px;
-}
-footer > div.acces > div.callinfo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  margin-top: 15px;
-}
-footer > div.acces > div.callinfo > span {
-  padding-inline: 15px;
-  color: #7b7b7c;
-  font-size: clamp(6px, 2vw, 12px);
-}
-footer > div.acces > div.callinfo > span.mid {
-  border-inline: 1px solid #88898b;
-}
-footer > div.acces > div.services {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 40px auto;
-}
-footer > div.acces > div.services > a {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-footer > div.acces > div.services > a > p {
-  font-size: clamp(8px, 3vw, 10px);
-}
-footer > section.ease {
-  width: 100%;
-}
-footer > section.ease > div.ease {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  width: 100%;
-}
-footer > section.ease > div.ease > div.with {
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-  > h2 {
-    font-size: clamp(16px, 4vw, 18px);
-    font-weight: normal;
-  }
-  > a {
-    font-size: clamp(10px, 4vw, 14px);
-    color: #88898b;
-  }
-}
-footer > section.ease > div.ease > div.costumer {
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-  > h2 {
-    font-size: clamp(16px, 4vw, 18px);
-    font-weight: normal;
-  }
-  > a {
-    font-size: clamp(10px, 4vw, 14px);
-    color: #88898b;
-  }
-}
-footer > section.ease > div.ease > div.guide {
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 15px;
-  > h2 {
-    font-size: clamp(16px, 4vw, 18px);
-    font-weight: normal;
-  }
-  > a {
-    font-size: clamp(10px, 4vw, 14px);
-    color: #88898b;
-  }
-}
-footer > section.ease > div.ease > div.comunication {
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
-}
-footer > section.ease > div.ease > div.comunication > div.social {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 10px;
-  > h2 {
-    font-size: clamp(16px, 4vw, 18px);
-    font-weight: normal;
-  }
-}
-footer > section.ease > div.ease > div.comunication > div.social > div.links {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer
-  > section.ease
-  > div.ease
-  > div.comunication
-  > div.social
-  > div.links
-  > a {
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-footer > section.ease > div.ease > div.comunication > div.email {
-  width: 100%;
-  margin-block: 20px;
-}
-footer > section.ease > div.ease > div.comunication > div.email > form {
-  width: 100%;
-}
-footer > section.ease > div.ease > div.comunication > div.email > form > h2 {
-  width: 100%;
-  text-align: center;
-  font-weight: 400;
-  font-size: large;
-}
-footer > section.ease > div.ease > div.comunication > div.email > form > div {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 10px;
-  gap: 2%;
-}
-footer
-  > section.ease
-  > div.ease
-  > div.comunication
-  > div.email
-  > form
-  > div
-  > input#email {
-  background-color: #f0f0f1;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  flex-grow: 4;
-  font-size: large;
-}
-footer
-  > section.ease
-  > div.ease
-  > div.comunication
-  > div.email
-  > form
-  > div
-  > input#email::placeholder {
-  font-size: large;
-}
-footer
-  > section.ease
-  > div.ease
-  > div.comunication
-  > div.email
-  > form
-  > div
-  > input#email:focus {
-  outline: none;
-}
-footer
-  > section.ease
-  > div.ease
-  > div.comunication
-  > div.email
-  > form
-  > div
-  > input#submit {
-  background-color: #b2b4b8;
-  border: none;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  flex-grow: 1;
-  font-size: large;
-}
-footer > section.app {
-  width: 100%;
-  margin-block: 20px;
-}
-footer > section.app > div.app {
-  width: 100%;
-  background-color: #3c4b6d;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 20px;
-  box-sizing: border-box;
-}
-footer > section.app > div.app > div.txt {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-footer > section.app > div.app > div.txt > img {
-  object-fit: cover;
-  width: 10%;
-  aspect-ratio: 1;
-}
-footer > section.app > div.app > div.txt > span {
-  color: white;
-  font-size: large;
-  font-weight: 600;
-}
-footer > section.app > div.app > div.button {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-footer > section.app > div.app > div.button > a {
-  height: 45px;
-  line-height: 0;
-}
-
-footer > section.app > div.app > div.button > a#more {
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 5px;
-}
-footer > section.app > div.app > div.button > a > img {
-  height: 100%;
-}
 /*! footer discription */
 
 footer > section.describe > div.container {
@@ -1256,7 +612,7 @@ footer > section.describe > div.container {
   border-top: 1px solid #e3e3e4;
 }
 footer > section.describe > div.container > div.txt {
-  width: 70%;
+ 
   padding-left: 10px;
   position: relative;
   overflow: hidden;
@@ -1291,19 +647,22 @@ footer > section.describe > div.container > div.txt > * {
   word-spacing: 3px;
   line-height: 35px;
 }
-footer > section.describe > div.container > div.txt > h2 {
+footer > section.describe > div.container > div.txt > h3 {
   color: #838384 !important;
+  font-size: clamp(12px , 2vw , 18px);
+}
+footer > section.describe > div.container > div.txt>p{
+  font-size: clamp(9px , 2vw , 15px);
 }
 footer > section.describe > div.container > div.trust {
-  width: 30%;
+  width: 40%;
   padding: 5px;
-  display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
 footer > section.describe > div.container > div.trust > a {
-  flex: 1;
+  width: 91px;
   padding: 10px;
   border: 1px solid #cccccc;
   border-radius: 10px;
@@ -1313,38 +672,5 @@ footer > section.describe > div.container > div.trust > a > img {
   aspect-ratio: 1;
   object-fit: contain;
 }
-footer > div.copyright {
-  padding: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top: #9c9c9c 1px solid;
-  font-size: small;
-  > P {
-    color: #88898b;
-  }
-}
-footer > section.sponser {
-  width: 100%;
-  position: absolute;
-  top: 100%;
-}
-footer > section.sponser > div.box {
-  display: grid;
-  gap: 1px;
-  background-color: #9c9c9c;
-  grid-template-columns: repeat(9, 1fr);
-}
-footer > section.sponser > div.box > a {
-  display: flex;
-  padding: 30px 20px;
-  background-color: #d8d9db;
-  justify-content: center;
-  align-items: center;
-}
-footer > section.sponser > div.box > a > img {
-  object-fit: fill;
-  height: 20px;
-  width: clamp(110px, 2vw, 140px);
-}
+
+

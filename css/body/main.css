@@ -236,6 +236,420 @@
     width: clamp(30px, 3vw, 50px);
     height: clamp(30px, 3vw, 50px);
   }
+  /* --------------------amazings swipwer---------------- */
+  section.amazing {
+    background-color: #ed1945;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 10px;
+    padding-inline: 20px;
+  }
+
+  section.amazing div.amazing {
+    width: 18%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  section.amazing .swiper {
+    border-radius: 10px;
+    width: 100%;
+    height: 90% !important;
+  }
+
+  section.amazing .swiper-wrapper {
+    height: 100% !important;
+  }
+
+  section.amazing .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.amazing .swiper-button-next {
+    background-color: #a9a9aa;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: clamp(30px, 3vw, 50px);
+    height: clamp(30px, 3vw, 50px);
+  }
+
+  section.amazing .swiper-button-prev {
+    background-color: #a9a9aa;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    width: clamp(30px, 3vw, 50px);
+    height: clamp(30px, 3vw, 50px);
+  }
+
+  section.amazing div.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  section.amazing div.more a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.amazing div.more svg {
+    aspect-ratio: 1;
+    border: 3px solid #1672dd;
+    text-align: center;
+    border-radius: 50%;
+    size: 10%;
+    padding: 5px;
+  }
+
+  section.amazing div.more p {
+    font-size: small;
+  }
+
+  section.amazing > div.swiper > div.swiper-wrapper > .swiper-slide > a {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.amazing .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.amazing .swiper-slide a div.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding-inline: 3px;
+  }
+
+  section.amazing .swiper-slide a span {
+    font-family: cubic;
+    font-size: medium;
+  }
+
+  section.amazing div.swiper-slide a p {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #585858;
+  }
+
+  section.amazing div.swiper-slide a span.takhfif {
+    background-color: crimson;
+    border-radius: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+  }
+
+  section.amazing div.swiper-slide a span.pprice {
+    color: #585858;
+    text-decoration: solid #585858 line-through;
+    display: block;
+    width: 100%;
+    text-align: end;
+    padding-inline: 20%;
+    margin-block: 5px;
+  }
+
+  span.nprice {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  /* box under the amazing 1 part */
+  section.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    gap: 5%;
+    flex-wrap: nowrap;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  section.box > a {
+    flex: 1;
+  }
+  section.box > a > img {
+    border-radius: 30px;
+    width: 100%;
+  }
+  /* fast delivery */
+
+  section.fastdelivery {
+    margin: 0px 20px;
+    background-color: #fcf3eb;
+    border-radius: 10px;
+    padding-top: 20px;
+  }
+  section.fastdelivery > div.fast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.fastdelivery > div.fast > div.upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 97%;
+    gap: 60px;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head > img {
+    width: 7%;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head > span {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #feedd0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning > p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      font-size: small;
+      border-radius: 100%;
+      background-color: orange;
+      color: white;
+      aspect-ratio: 1;
+    }
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning > button {
+    background-color: transparent;
+    border: none;
+    color: rgb(230, 150, 2);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  section.fastdelivery > div.fast > div.main {
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  section.fastdelivery > div.fast > div.main > div.wall {
+    width: 100%;
+    height: 100%;
+    background-color: #feedd0;
+    opacity: 60%;
+    display: block;
+    z-index: 2;
+    position: absolute;
+  }
+  /* amazing 2  */
+  section.amazing2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #71bb2c;
+    border-radius: 30px;
+
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  section.amazing2 div.amazing2 {
+    width: 18%;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 20px;
+  }
+
+  section.amazing2 div.amazing2 button {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    border: none;
+    transition: all linear 0.5s;
+  }
+
+  section.amazing2 div.amazing2 button:hover {
+    background-color: #efeff0;
+  }
+
+  section.amazing2 .swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  section.amazing2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  section.amazing2 .swiper-slide a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section.amazing2 .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.amazing2 div.swiper-slide a p {
+    font-size: clamp(3px, 2vw, 15px);
+    padding-inline: 3px;
+  }
+
+  section.amazing2 div.swiper-slide a span {
+    align-self: flex-end;
+  }
+
+  section.amazing2 div.swiper-slide a div.price {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    text-align: start;
+    font-size: clamp(3px, 2vw, 12px);
+  }
+
+  section.amazing2 div.swiper-slide a div.price span.pprice {
+    order: 2;
+    text-decoration: line-through #88898b 1px;
+    color: #88898b;
+  }
+
+  section.amazing2 div.swiper-slide a div.price span.takhfif {
+    background: crimson;
+    padding: 2px 4px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  section.amazing2 div.swiper-slide a span.nprice {
+    font-size: clamp(5px, 2vw, 15px);
+  }
+
+  section.amazing2 div.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: content-box;
+    height: auto;
+  }
+
+  section.amazing2 div.more a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 0;
+    padding: 5px;
+  }
+
+  section.amazing2 div.more p {
+    font-size: small;
+    color: #585858;
+  }
+
+  /*********** under daste bandi *******************/
+  section.undercategory {
+    display: flex;
+    width: 98%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  section.undercategory a {
+    line-height: none;
+    flex-grow: 1;
+  }
+
+  section.undercategory a img {
+    width: 100%;
+    border-radius: 30px;
+  }
+  /* most sales section */
+  section.most {
+    border: 1px solid #a9a9aa;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -276,7 +690,459 @@
     width: 100%;
     height: 100%;
     object-fit: fill;
+    border-radius: 10px;
+  }
+  /* --------------------amazings swipwer---------------- */
+  section.amazing {
+    background-color: #ed1945;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
+  }
+  section.amazing div.amazing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section.amazing div.amazing a.all {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: #ffffff;
+  }
+  section.amazing div.amazing div.logo {
+    padding: 10px 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #off {
+    order: 1;
+    width: 20%;
+  }
+  #amazing {
+    order: 2;
+    width: 20%;
+  }
+  .clock {
+    order: 3;
+  }
+  section.amazing .swiper {
+    border-radius: 10px;
+    width: 100%;
+    height: 90% !important;
+  }
 
+  section.amazing .swiper-wrapper {
+    height: 100% !important;
+  }
+
+  section.amazing .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.amazing .swiper-button-next {
+    background-color: #a9a9aa;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: clamp(30px, 3vw, 50px);
+    height: clamp(30px, 3vw, 50px);
+  }
+
+  section.amazing .swiper-button-prev {
+    background-color: #a9a9aa;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    width: clamp(30px, 3vw, 50px);
+    height: clamp(30px, 3vw, 50px);
+  }
+
+  section.amazing div.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  section.amazing div.more a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.amazing div.more svg {
+    aspect-ratio: 1;
+    border: 3px solid #1672dd;
+    text-align: center;
+    border-radius: 50%;
+    size: 10%;
+    padding: 5px;
+  }
+
+  section.amazing div.more p {
+    font-size: small;
+  }
+
+  section.amazing > div.swiper > div.swiper-wrapper > .swiper-slide > a {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.amazing .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.amazing .swiper-slide a div.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding-inline: 3px;
+  }
+
+  section.amazing .swiper-slide a span {
+    font-family: cubic;
+    font-size: medium;
+  }
+
+  section.amazing div.swiper-slide a p {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #585858;
+  }
+
+  section.amazing div.swiper-slide a span.takhfif {
+    background-color: crimson;
+    border-radius: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+  }
+
+  section.amazing div.swiper-slide a span.pprice {
+    color: #585858;
+    text-decoration: solid #585858 line-through;
+    display: block;
+    width: 100%;
+    text-align: end;
+    padding-inline: 20%;
+    margin-block: 5px;
+  }
+
+  span.nprice {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  /* box under the amazing 1 part */
+  section.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 10px;
+  }
+  section.box > a {
+    width: 48%;
+  }
+  section.box > a > img {
+    border-radius: 30px;
+    width: 100%;
+  }
+  /* fast delivery */
+
+  section.fastdelivery {
+    margin: 0px 20px;
+    background-color: #fcf3eb;
+    border-radius: 10px;
+    padding-top: 20px;
+  }
+  section.fastdelivery > div.fast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.fastdelivery > div.fast > div.upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 97%;
+    gap: 20px;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head > img {
+    width: 9%;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head > span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #feedd0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning > p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: clamp(10px, 2vw, 16px);
+    font-weight: 500;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      font-size: small;
+      border-radius: 100%;
+      background-color: orange;
+      color: white;
+      aspect-ratio: 1;
+    }
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning > button {
+    background-color: transparent;
+    border: none;
+    color: rgb(230, 150, 2);
+    font-size: clamp(10px, 2vw, 16px);
+    cursor: pointer;
+  }
+  section.fastdelivery > div.fast > div.main {
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  section.fastdelivery > div.fast > div.main > div.wall {
+    width: 100%;
+    height: 100%;
+    background-color: #feedd0;
+    opacity: 60%;
+    display: block;
+    z-index: 2;
+    position: absolute;
+  }
+  /* amazing 2  */
+  section.amazing2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #71bb2c;
+    border-radius: 30px;
+    margin: 20px 10px;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  section.amazing2 div.amazing2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+  }
+  section.amazing2 div.amazing2 div.rt-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 20px;
+  }
+  section.amazing2 div.amazing2 div.rt-logo img {
+    width: 25%;
+  }
+  section.amazing2 div.amazing2 button {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 10px 5px;
+    border: none;
+    transition: all linear 0.5s;
+    font-size: 12px;
+  }
+
+  section.amazing2 div.amazing2 button:hover {
+    background-color: #efeff0;
+  }
+
+  section.amazing2 .swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  section.amazing2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  section.amazing2 .swiper-slide a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section.amazing2 .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.amazing2 div.swiper-slide a p {
+    font-size: clamp(3px, 2vw, 15px);
+    padding-inline: 3px;
+  }
+
+  section.amazing2 div.swiper-slide a span {
+    align-self: flex-end;
+  }
+
+  section.amazing2 div.swiper-slide a div.price {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    text-align: start;
+    font-size: clamp(3px, 2vw, 12px);
+  }
+
+  section.amazing2 div.swiper-slide a div.price span.pprice {
+    order: 2;
+    text-decoration: line-through #88898b 1px;
+    color: #88898b;
+  }
+
+  section.amazing2 div.swiper-slide a div.price span.takhfif {
+    background: crimson;
+    padding: 2px 4px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  section.amazing2 div.swiper-slide a span.nprice {
+    font-size: clamp(5px, 2vw, 15px);
+  }
+
+  section.amazing2 div.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: content-box;
+    height: auto;
+  }
+
+  section.amazing2 div.more a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 0;
+    padding: 5px;
+  }
+
+  section.amazing2 div.more p {
+    font-size: small;
+    color: #585858;
+  }
+  /*********** under daste bandi *******************/
+  section.undercategory {
+    display: flex;
+    width: 98%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  section.undercategory a {
+    width: 95%;
+    line-height: none;
+    flex-grow: 1;
+  }
+
+  section.undercategory a img {
+    width: 100%;
+    border-radius: 30px;
+  }
+  /* most sales section */
+  section.most {
+    border: none;
+  }
+  section.most .swiper-slide div.item {
+    border: 1px solid #a9a9aa;
+    padding: 5px;
     border-radius: 10px;
   }
 }
@@ -310,6 +1176,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
   }
 
   section.slide .swiper-slide img {
@@ -318,5 +1185,459 @@
     height: 100%;
     object-fit: cover;
     size: cover;
+    border-radius: 10px;
   }
+  /* --------------------amazings swipwer---------------- */
+  section.amazing {
+    background-color: #ed1945;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 10px;
+    padding-inline: 20px;
+    padding-block: 10px;
+  }
+  section.amazing div.amazing {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  section.amazing div.amazing a.all {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: #ffffff;
+  }
+  section.amazing div.amazing div.logo {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  #off {
+    order: 1;
+    width: 15%;
+  }
+  #amazing {
+    order: 2;
+    width: 20%;
+  }
+  .clock {
+    order: 3;
+  }
+  section.amazing .swiper {
+    border-radius: 10px;
+    width: 100%;
+    height: 90% !important;
+  }
+
+  section.amazing .swiper-wrapper {
+    height: 100% !important;
+  }
+
+  section.amazing .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2px;
+  }
+
+  section.amazing .swiper-button-next {
+    background-color: #a9a9aa;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: clamp(30px, 3vw, 50px);
+    height: clamp(30px, 3vw, 50px);
+  }
+
+  section.amazing .swiper-button-prev {
+    background-color: #a9a9aa;
+    border-radius: 50%;
+    padding: 10px;
+    position: absolute;
+    width: clamp(30px, 3vw, 50px);
+    height: clamp(30px, 3vw, 50px);
+  }
+
+  section.amazing div.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  section.amazing div.more a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section.amazing div.more svg {
+    aspect-ratio: 1;
+    border: 3px solid #1672dd;
+    text-align: center;
+    border-radius: 50%;
+    size: 10%;
+    padding: 5px;
+  }
+
+  section.amazing div.more p {
+    font-size: small;
+  }
+
+  section.amazing > div.swiper > div.swiper-wrapper > .swiper-slide > a {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.amazing .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.amazing .swiper-slide a div.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding-inline: 3px;
+  }
+
+  section.amazing .swiper-slide a span {
+    font-family: cubic;
+    font-size: medium;
+  }
+
+  section.amazing div.swiper-slide a p {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #585858;
+  }
+
+  section.amazing div.swiper-slide a span.takhfif {
+    background-color: crimson;
+    border-radius: 20px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+  }
+
+  section.amazing div.swiper-slide a span.pprice {
+    color: #585858;
+    text-decoration: solid #585858 line-through;
+    display: block;
+    width: 100%;
+    text-align: end;
+    padding-inline: 20%;
+    margin-block: 5px;
+  }
+
+  span.nprice {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  /* box under the amazing 1 part */
+  section.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 10px;
+  }
+  section.box > a {
+    width: 48%;
+  }
+  section.box > a > img {
+    border-radius: 30px;
+    width: 100%;
+  }
+  /* fast delivery */
+
+  section.fastdelivery {
+    margin: 0px 20px;
+    background-color: #fcf3eb;
+    border-radius: 10px;
+    padding-top: 20px;
+  }
+  section.fastdelivery > div.fast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  section.fastdelivery > div.fast > div.upper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 97%;
+    gap: 20px;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head > img {
+    width: 25%;
+  }
+  section.fastdelivery > div.fast > div.upper > div.head > span {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #feedd0;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning > p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: clamp(8px, 2vw, 12px);
+    font-weight: 500;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10px;
+      font-size: smaller;
+      border-radius: 100%;
+      background-color: orange;
+      color: white;
+      aspect-ratio: 1;
+    }
+  }
+  section.fastdelivery > div.fast > div.upper > div.warning > button {
+    background-color: transparent;
+    border: none;
+    color: rgb(230, 150, 2);
+    font-size: clamp(8px, 2vw, 12px);
+    cursor: pointer;
+  }
+  section.fastdelivery > div.fast > div.main {
+    width: 100%;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  section.fastdelivery > div.fast > div.main > div.wall {
+    width: 100%;
+    height: 100%;
+    background-color: #feedd0;
+    opacity: 60%;
+    display: block;
+    z-index: 2;
+    position: absolute;
+  }
+  /* amazing 2  */
+  section.amazing2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #71bb2c;
+    border-radius: 30px;
+    margin: 20px 10px;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  section.amazing2 div.amazing2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 20px;
+  }
+  section.amazing2 div.amazing2 div.rt-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 20px;
+  }
+  section.amazing2 div.amazing2 div.rt-logo img {
+    width: 25%;
+  }
+  section.amazing2 div.amazing2 button {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px;
+    font-size: 8px;
+    border: none;
+    transition: all linear 0.5s;
+    gap: 3px;
+  }
+
+  section.amazing2 div.amazing2 button:hover {
+    background-color: #efeff0;
+  }
+
+  section.amazing2 .swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  section.amazing2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  section.amazing2 .swiper-slide a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section.amazing2 .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  section.amazing2 div.swiper-slide a p {
+    font-size: clamp(3px, 2vw, 15px);
+    padding-inline: 3px;
+  }
+
+  section.amazing2 div.swiper-slide a span {
+    align-self: flex-end;
+  }
+
+  section.amazing2 div.swiper-slide a div.price {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    text-align: start;
+    font-size: clamp(3px, 2vw, 12px);
+  }
+
+  section.amazing2 div.swiper-slide a div.price span.pprice {
+    order: 2;
+    text-decoration: line-through #88898b 1px;
+    color: #88898b;
+  }
+
+  section.amazing2 div.swiper-slide a div.price span.takhfif {
+    background: crimson;
+    padding: 2px 4px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  section.amazing2 div.swiper-slide a span.nprice {
+    font-size: clamp(5px, 2vw, 15px);
+  }
+
+  section.amazing2 div.more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-sizing: content-box;
+    height: auto;
+  }
+
+  section.amazing2 div.more a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 0;
+    padding: 5px;
+  }
+
+  section.amazing2 div.more p {
+    font-size: small;
+    color: #585858;
+  }
+  /* most sales section */
+  section.most {
+    border: none;
+  }
+  section.most .swiper-slide div.item {
+    border: 1px solid #a9a9aa;
+    padding: 5px;
+    border-radius: 10px;
+  }
+    /*********** under daste bandi *******************/
+  section.undercategory {
+    display: flex;
+    width: 98%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  section.undercategory a {
+    width: 95%;
+    line-height: none;
+    flex-grow: 1;
+  }
+
+  section.undercategory a img {
+    width: 100%;
+    border-radius: 30px;
+  }
+  
 }

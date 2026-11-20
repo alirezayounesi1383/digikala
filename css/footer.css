@@ -1,11 +1,815 @@
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
+  footer > div.acces {
+    width: 100%;
+    div.app-logo,
+    div.cellphone {
+      display: none;
+    }
+  }
 
+  footer > div.acces > div.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer > div.acces > div.top > img {
+    width: 16%;
+  }
+  footer > div.acces > div.top > a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: clamp(8px, 3vw, 13px);
+    color: #88898b;
+    border: #88898b solid 1px;
+    border-radius: 10px;
+    padding: 6px 10px;
+  }
+  footer > div.acces > div.callinfo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 15px;
+  }
+  footer > div.acces > div.callinfo > span {
+    padding-inline: 15px;
+    color: #7b7b7c;
+    font-size: clamp(6px, 2vw, 12px);
+  }
+  footer > div.acces > div.callinfo > span.mid {
+    border-inline: 1px solid #88898b;
+  }
+  footer > div.acces > div.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+  }
+  footer > div.acces > div.services > a {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer > div.acces > div.services > a > p {
+    font-size: clamp(8px, 3vw, 10px);
+  }
+  footer > section.ease {
+    width: 100%;
+  }
+  footer > section.ease > div.ease {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  footer > section.ease > div.ease > div {
+    > h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      font-size: clamp(16px, 4vw, 18px);
+      font-weight: normal;
+      > span {
+        display: none;
+      }
+    }
+    div.as {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      gap: 20px;
+      > a {
+        font-size: clamp(10px, 4vw, 14px);
+        color: #88898b;
+      }
+    }
+  }
+  footer > section.ease > div.ease > div.with {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer > section.ease > div.ease > div.costumer {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer > section.ease > div.ease > div.guide {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  footer > section.ease > div.ease > div.comunication {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  footer > section.ease > div.ease > div.comunication > div.social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    > h2 {
+      font-size: clamp(16px, 4vw, 18px);
+      font-weight: normal;
+    }
+  }
+  footer > section.ease > div.ease > div.comunication > div.social > div.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer
+    > section.ease
+    > div.ease
+    > div.comunication
+    > div.social
+    > div.links
+    > a {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer > section.ease > div.ease > div.comunication > div.email {
+    width: 100%;
+    margin-block: 20px;
+  }
+  footer > section.ease > div.ease > div.comunication > div.email > form {
+    width: 100%;
+  }
+  footer > section.ease > div.ease > div.comunication > div.email > form > h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: large;
+  }
+  footer > section.ease > div.ease > div.comunication > div.email > form > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 2%;
+  }
+  footer
+    > section.ease
+    > div.ease
+    > div.comunication
+    > div.email
+    > form
+    > div
+    > input#email {
+    background-color: #f0f0f1;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    flex-grow: 4;
+    font-size: large;
+  }
+  footer
+    > section.ease
+    > div.ease
+    > div.comunication
+    > div.email
+    > form
+    > div
+    > input#email::placeholder {
+    font-size: large;
+  }
+  footer
+    > section.ease
+    > div.ease
+    > div.comunication
+    > div.email
+    > form
+    > div
+    > input#email:focus {
+    outline: none;
+  }
+  footer
+    > section.ease
+    > div.ease
+    > div.comunication
+    > div.email
+    > form
+    > div
+    > input#submit {
+    background-color: #b2b4b8;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    font-size: large;
+  }
+  footer > section.app {
+    width: 100%;
+    margin-block: 20px;
+  }
+  footer > section.app > div.app {
+    width: 100%;
+    background-color: #3c4b6d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-sizing: border-box;
+  }
+  footer > section.app > div.app > div.txt {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  footer > section.app > div.app > div.txt > img {
+    object-fit: cover;
+    width: 10%;
+    aspect-ratio: 1;
+  }
+  footer > section.app > div.app > div.txt > span {
+    color: white;
+    font-size: large;
+    font-weight: 600;
+  }
+  footer > section.app > div.app > div.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  footer > section.app > div.app > div.button > a {
+    height: 45px;
+    line-height: 0;
+  }
+
+  footer > section.app > div.app > div.button > a#more {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+  }
+  footer > section.app > div.app > div.button > a > img {
+    height: 100%;
+  }
+  footer > div.copyright {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: #9c9c9c 1px solid;
+    font-size: small;
+    > P {
+      color: #88898b;
+    }
+  }
+  /*! footer discription */
+  footer > section.describe > div.container > div.trust {
+    display: flex;
+  }
+  footer > section.describe > div.container > div.txt {
+    width: 70%;
+  }
+  /* ! sponser section */
+
+  footer > section.sponser {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    h2 {
+      display: none;
+    }
+  }
+  footer > section.sponser > div.box {
+    display: grid;
+    width: 100%;
+    gap: 1px;
+    background-color: #9c9c9c;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+  }
+  footer > section.sponser > div.box > a {
+    display: flex;
+    min-width: 0;
+    padding: 30px 20px;
+    background-color: #d8d9db;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > section.sponser > div.box > a > img {
+    object-fit: contain;
+    height: 20px;
+    width: 100%;
+    max-width: 140px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  section.app,
+  div.copyright {
+    display: none;
+  }
 
+  div.acces {
+    width: 100%;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    div.services,
+    div.callinfo {
+      display: none;
+    }
+  }
+  div.acces > div.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+      display: none;
+    }
+    > a {
+      margin-top: 20px;
+      background-color: #dddfe3;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  div.acces > div.cellphone {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddfe3;
+    padding-bottom: 5px;
+  }
+  div.acces > div.cellphone > button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: small;
+  }
+  div.acces > div.cellphone > div.rt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  div.acces > div.cellphone > div.rt > span {
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    background-color: #dfe0e1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  div.acces > div.cellphone > div.rt > div.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    font-size: small;
+    > span {
+      color: #88898b;
+    }
+  }
+  div.acces > div.app-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddfe3;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  div.acces > div.app-logo > button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: small;
+  }
+  div.acces > div.app-logo > div.rt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  div.acces > div.app-logo > div.rt > img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #dfe0e1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.acces > div.app-logo > div.rt > div.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    font-size: small;
+    > span {
+      color: #88898b;
+    }
+  }
+  footer > section.ease {
+    order: 2;
+    width: 100%;
+  }
+  footer > section.ease > div.ease {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer > section.ease > div.ease > div {
+    border-bottom: 1px solid #7b7b7c;
+    width: 100%;
+    padding-block: 20px;
+    > h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    > div.as {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      > a {
+        font-size: clamp(8px, 4vw, 12px);
+        color: #88898b;
+      }
+    }
+  }
+  footer > section.ease > div.ease > div.with {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 15px;
+    > h2 {
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  footer > section.ease > div.ease > div.costumer {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    > h2 {
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+    }
+  }
+  footer > section.ease > div.ease > div.guide {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    > h2 {
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+    }
+  }
+  footer > section.ease > div.ease > div.comunication {
+    display: none;
+  }
+  /*! footer discription */
+  footer > section.describe {
+    order: 4;
+  }
+  footer > section.describe > div.container > div.trust {
+    display: none;
+  }
+  footer > section.describe > div.container > div.txt {
+    width: 100%;
+  }
+
+  /* ! sponser section */
+
+  footer > section.sponser {
+    width: 100%;
+    order: 3;
+    > h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+      margin-block: 20px;
+    }
+  }
+  footer > section.sponser > div.box {
+    display: none;
+    width: 100%;
+    gap: 1px;
+    background-color: #dddfe3;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  footer > section.sponser > div.box > a {
+    display: flex;
+    min-width: 0;
+    padding: 30px 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > section.sponser > div.box > a > img {
+    object-fit: contain;
+    height: 20px;
+    width: 100%;
+    max-width: 140px;
+  }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  section.app,
+  div.copyright {
+    display: none;
+  }
+  div.acces {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    div.services,
+    div.callinfo {
+      display: none;
+    }
+  }
+  div.acces > div.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    > img {
+      display: none;
+    }
+    > a {
+      margin-top: 20px;
+      background-color: #dddfe3;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }
+  div.acces > div.cellphone {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddfe3;
+    padding-bottom: 5px;
+  }
+  div.acces > div.cellphone > button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: small;
+  }
+  div.acces > div.cellphone > div.rt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  div.acces > div.cellphone > div.rt > span {
+    display: block;
+    width: 35px;
+    height: 35px;
 
+    background-color: #dfe0e1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+  div.acces > div.cellphone > div.rt > div.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    font-size: small;
+    > span {
+      color: #88898b;
+    }
+  }
+  div.acces > div.app-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddfe3;
+    padding-bottom: 5px;
+    margin-top: 10px;
+  }
+  div.acces > div.app-logo > button {
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: small;
+  }
+  div.acces > div.app-logo > div.rt {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  div.acces > div.app-logo > div.rt > img {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-color: #dfe0e1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.acces > div.app-logo > div.rt > div.txt {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    font-size: small;
+    > span {
+      color: #88898b;
+    }
+  }
+  footer > section.ease {
+    width: 100%;
+  }
+  footer > section.ease > div.ease {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+  }
+  footer > section.ease > div.ease > div {
+    border-bottom: 1px solid #7b7b7c;
+    width: 100%;
+    padding-block: 20px;
+    > h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    > div.as {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 20px;
+      > a {
+        font-size: clamp(8px, 4vw, 12px);
+        color: #88898b;
+      }
+    }
+  }
+  footer > section.ease > div.ease > div.with {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 15px;
+    > h2 {
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  footer > section.ease > div.ease > div.costumer {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    > h2 {
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+    }
+  }
+  footer > section.ease > div.ease > div.guide {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    > h2 {
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+    }
+  }
+  footer > section.ease > div.ease > div.comunication {
+    display: none;
+  }
+  /*! footer discription */
+  footer > section.describe {
+    order: 4;
+  }
+  footer > section.describe > div.container > div.trust {
+    display: none;
+  }
+  footer > section.describe > div.container > div.txt {
+    width: 100%;
+  }
+  /* ! sponser section */
+
+  footer > section.sponser {
+    width: 100%;
+    order: 3;
+    > h2 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      font-size: clamp(10px, 3vw, 14px);
+      font-weight: normal;
+      margin-block: 20px;
+    }
+  }
+  footer > section.sponser > div.box {
+    display: none;
+    width: 100%;
+    gap: 1px;
+    background-color: #dddfe3;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  footer > section.sponser > div.box > a {
+    display: flex;
+    min-width: 0;
+    padding: 30px 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > section.sponser > div.box > a > img {
+    object-fit: contain;
+    height: 20px;
+    width: 100%;
+    max-width: 140px;
+  }
 }

@@ -167,7 +167,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: clamp(8px, 1.2vw, 14px);
     padding-inline: 5px;
   }
 
@@ -177,11 +177,12 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-inline: 5px;
   }
 
   header > div.header > div.navbar > nav > div.navitems > a.navside {
     color: #5f5e5e;
-    font-size: 14px;
+    font-size: clamp(8px, 1.2vw, 14px);
   }
 
   header > div.header > div.navbar > nav > div.navitems > ul {
@@ -202,10 +203,11 @@
   }
 
   header > div.header > div.navbar > nav > div.navitems > ul > li > a {
-    font-size: 14px;
+    font-size: clamp(8px, 1.2vw, 14px);
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2px;
     color: #5f5e5e;
   }
 
