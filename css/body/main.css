@@ -254,6 +254,41 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    > a {
+      background-color: #fff;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: small;
+    }
+  }
+  section.amazing div.amazing div.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .timer {
+    direction: ltr;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.16em;
+    padding: 0.18em 0.35em;
+    border-radius: 8px;
+
+    font-size: clamp(10px, 3vw, 24px);
+    font-weight: 800;
+    line-height: 1.2;
+    white-space: nowrap;
+    span {
+      color: #fff;
+    }
+  }
+
+  .timer-part {
+    min-width: 2ch;
+    text-align: center;
   }
 
   section.amazing .swiper {
@@ -388,7 +423,7 @@
     justify-content: center;
     font-weight: bold;
   }
-  /* box under the amazing 1 part */
+  /*! box under the amazing 1 part */
   section.box {
     display: flex;
     align-items: center;
@@ -406,7 +441,7 @@
     border-radius: 30px;
     width: 100%;
   }
-  /* fast delivery */
+  /* !fast delivery */
 
   section.fastdelivery {
     margin: 0px 20px;
@@ -724,6 +759,28 @@
     align-items: center;
     justify-content: flex-start;
   }
+  .timer {
+    direction: ltr;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.16em;
+    padding: 0.18em 0.35em;
+    border-radius: 8px;
+
+    font-size: clamp(10px, 3vw, 24px);
+    font-weight: 800;
+    line-height: 1.2;
+    white-space: nowrap;
+    span {
+      color: #fff;
+    }
+  }
+
+  .timer-part {
+    min-width: 2ch;
+    text-align: center;
+  }
   #off {
     order: 1;
     width: 20%;
@@ -848,7 +905,7 @@
     width: fit-content;
     color: white;
     font-weight: bold;
-    font-size: clamp(8px , 2vw , 12px);
+    font-size: clamp(8px, 2vw, 12px);
   }
 
   section.amazing div.swiper-slide a span.pprice {
@@ -867,7 +924,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-     font-size: clamp(8px , 2vw , 12px);
+    font-size: clamp(8px, 2vw, 12px);
   }
   /* box under the amazing 1 part */
   section.box {
@@ -1220,6 +1277,30 @@
     align-items: center;
     justify-content: flex-start;
   }
+  /* ?clock */
+
+  .timer {
+    direction: ltr;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.16em;
+    padding: 0.18em 0.35em;
+    border-radius: 8px;
+
+    font-size: clamp(10px, 3vw, 24px);
+    font-weight: 800;
+    line-height: 1.2;
+    white-space: nowrap;
+    span {
+      color: #fff;
+    }
+  }
+
+  .timer-part {
+    min-width: 2ch;
+    text-align: center;
+  }
   #off {
     order: 1;
     width: 15%;
@@ -1345,7 +1426,7 @@
     width: fit-content;
     color: white;
     font-weight: bold;
-     font-size: clamp(8px , 2vw , 12px);
+    font-size: clamp(8px, 2vw, 12px);
   }
 
   section.amazing div.swiper-slide a span.pprice {
@@ -1356,7 +1437,7 @@
     text-align: end;
     padding-inline: 20%;
     margin-block: 5px;
-     font-size: clamp(10px , 2vw , 16px) !important; 
+    font-size: clamp(10px, 2vw, 16px) !important;
   }
 
   span.nprice {
@@ -1365,7 +1446,7 @@
     align-items: center;
     justify-content: center;
     font-weight: bold;
-     font-size: clamp(10px , 2vw , 16px) !important; 
+    font-size: clamp(10px, 2vw, 16px) !important;
   }
   /* box under the amazing 1 part */
   section.box {
@@ -1623,7 +1704,7 @@
     padding: 5px;
     border-radius: 10px;
   }
-    /*********** under daste bandi *******************/
+  /*********** under daste bandi *******************/
   section.undercategory {
     display: flex;
     width: 98%;
@@ -1644,5 +1725,4 @@
     width: 100%;
     border-radius: 30px;
   }
-  
 }
